@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright (c) 2009, 2018 Oracle and/or its affiliates. All rights reserved.
+
+    This program and the accompanying materials are made available under the
+    terms of the Eclipse Public License v. 2.0, which is available at
+    http://www.eclipse.org/legal/epl-2.0.
+
+    This Source Code may also be made available under the following Secondary
+    Licenses when the conditions for such availability set forth in the
+    Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+    version 2 with the GNU Classpath Exception, which is available at
+    https://www.gnu.org/software/classpath/license.html.
+
+    SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+
+-->
+
+<application-client xmlns="http://xmlns.eclipse.org/xml/ns/jakartaee"
+    xmlns:c1="http://HandlerInfo.org/Client1"
+    xmlns:c2="http://HandlerInfo.org/Client2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:xml="http://www.w3.org/XML/1998/namespace" 
+    xsi:schemaLocation="http://xmlns.eclipse.org/xml/ns/jakartaee 
+      http://xmlns.eclipse.org/xml/ns/jakartaee/application-client_9.xsd"
+    version="9">
+  <display-name>HandlerInfoTestClnt_client</display-name>
+  <service-ref>
+    <service-ref-name>service/handlerinfohandler</service-ref-name>
+    <service-interface>javax.xml.rpc.Service</service-interface>
+    <wsdl-file>META-INF/wsdl/HelloService.wsdl</wsdl-file>
+    <jaxrpc-mapping-file>HelloService.xml</jaxrpc-mapping-file>
+    <port-component-ref>
+      <service-endpoint-interface>com.sun.ts.tests.webservices.handler.handlerinfo.Hello</service-endpoint-interface>
+    </port-component-ref>
+    <handler>
+      <handler-name>ClientHandler</handler-name>
+      <handler-class>com.sun.ts.tests.webservices.handler.handlerinfo.ClientHandler</handler-class>
+      <init-param>
+        <param-name>ClientParam1</param-name>
+        <param-value>value1</param-value>
+      </init-param>
+      <init-param>
+        <param-name>ClientParam2</param-name>
+        <param-value>value2</param-value>
+      </init-param>
+      <soap-header>c1:header1</soap-header>
+      <soap-header>c2:header2</soap-header>
+    </handler>
+    <mapped-name>mappedname</mapped-name>
+    <lookup-name>lookupname</lookup-name>
+  </service-ref>
+</application-client>
+<?validateAgainst application-client_9.xsd?>
