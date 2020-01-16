@@ -980,7 +980,7 @@
 
             Specifies whether any session tracking cookies created
             by this web application will be marked with a Same-Site
-	    attribute
+            attribute
 
           </xsd:documentation>
         </xsd:annotation>
@@ -1104,10 +1104,10 @@
       <xsd:documentation>
 
         This type defines the values for the Same-Site cookie 
-	attribute as defined by 
-	https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis-03#section-4.1.2.7
+        attribute as defined by 
+        https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis-03#section-4.1.2.7
 
-	Used in: cookie-config
+        Used in: cookie-config
 
       </xsd:documentation>
     </xsd:annotation>
