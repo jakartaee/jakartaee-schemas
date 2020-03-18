@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright (c) 2009, 2018 Oracle and/or its affiliates. All rights reserved.
+    Copyright (c) 2009, 2020 Oracle and/or its affiliates. All rights reserved.
 
     This program and the accompanying materials are made available under the
     terms of the Eclipse Public License v. 2.0, which is available at
@@ -18,8 +18,8 @@
 -->
 
 <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema"
-	    targetNamespace="http://xmlns.eclipse.org/xml/ns/jakartaee"
-	    xmlns:jakartaee="http://xmlns.eclipse.org/xml/ns/jakartaee"
+	    targetNamespace="https://jakarta.ee/xml/ns/jakartaee"
+	    xmlns:jakartaee="https://jakarta.ee/xml/ns/jakartaee"
 	    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 	    elementFormDefault="qualified"
 	    attributeFormDefault="unqualified"
@@ -41,15 +41,15 @@
 	deployment descriptors must indicate the connector resource
 	adapter schema by using the Jakarta EE namespace:
 
-	http://xmlns.eclipse.org/xml/ns/jakartaee
+	https://jakarta.ee/xml/ns/jakartaee
 
 	and by indicating the version of the schema by
 	using the version element as shown below:
 
-	    <connector xmlns="http://xmlns.eclipse.org/xml/ns/jakartaee"
+	    <connector xmlns="https://jakarta.ee/xml/ns/jakartaee"
 	      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	      xsi:schemaLocation="http://xmlns.eclipse.org/xml/ns/jakartaee
-		 http://xmlns.eclipse.org/xml/ns/jakartaee/connector_1_7.xsd"
+	      xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+		 https://jakarta.ee/xml/ns/jakartaee/connector_1_7.xsd"
 	      version="1.7">
 	      ...
 	    </connector>
@@ -58,7 +58,7 @@
 	the schema using the xsi:schemaLocation attribute for Jakarta EE
 	namespace with the following location:
 
-	http://xmlns.eclipse.org/xml/ns/jakartaee/connector_1_7.xsd
+	https://jakarta.ee/xml/ns/jakartaee/connector_1_7.xsd
 
 	]]>
     </xsd:documentation>

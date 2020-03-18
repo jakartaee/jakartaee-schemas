@@ -17,8 +17,8 @@
 
 -->
 
-<xsd:schema targetNamespace="http://xmlns.eclipse.org/xml/ns/jakartaee"
-            xmlns:jakartaee="http://xmlns.eclipse.org/xml/ns/jakartaee"
+<xsd:schema targetNamespace="https://jakarta.ee/xml/ns/jakartaee"
+            xmlns:jakartaee="https://jakarta.ee/xml/ns/jakartaee"
             xmlns:xsd="http://www.w3.org/2001/XMLSchema"
             xmlns:xml="http://www.w3.org/XML/1998/namespace"
             elementFormDefault="qualified"
@@ -42,9 +42,9 @@
       <p>JSF 2.3 Facelet Tag Libraries that wish to conform to this
       schema must declare it in the following manner.</p>
       
-      &lt;facelet-taglib xmlns="http://xmlns.eclipse.org/xml/ns/jakartaee"
+      &lt;facelet-taglib xmlns="https://jakarta.ee/xml/ns/jakartaee"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://xmlns.eclipse.org/xml/ns/jakartaee http://xmlns.eclipse.org/xml/ns/jakartaee/web-facelettaglibary_2_3.xsd"
+      xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-facelettaglibary_2_3.xsd"
       version="2.3"&gt;
       
       ...
@@ -55,7 +55,7 @@
       version of the schema using xsi:schemaLocation attribute
       for jakartaee namespace with the following location:</p>
       
-      <p>http://xmlns.eclipse.org/xml/ns/jakartaee/web-facelettaglibary_2_3.xsd</p>
+      <p>https://jakarta.ee/xml/ns/jakartaee/web-facelettaglibary_2_3.xsd</p>
       
       ]]>
     </xsd:documentation>

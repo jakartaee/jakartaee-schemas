@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright (c) 2009, 2018 Oracle and/or its affiliates. All rights reserved.
+    Copyright (c) 2009, 2020 Oracle and/or its affiliates. All rights reserved.
 
     This program and the accompanying materials are made available under the
     terms of the Eclipse Public License v. 2.0, which is available at
@@ -18,8 +18,8 @@
 -->
 
 <xsd:schema
-     targetNamespace="http://xmlns.eclipse.org/xml/ns/jakartaee"
-     xmlns:jakartaee="http://xmlns.eclipse.org/xml/ns/jakartaee"
+     targetNamespace="https://jakarta.ee/xml/ns/jakartaee"
+     xmlns:jakartaee="https://jakarta.ee/xml/ns/jakartaee"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema"
      elementFormDefault="qualified"
      attributeFormDefault="unqualified"

@@ -17,9 +17,9 @@
 
 -->
 
-<partial-response xmlns="http://xmlns.eclipse.org/xml/ns/jakartaee"
+<partial-response xmlns="https://jakarta.ee/xml/ns/jakartaee"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xmlns.eclipse.org/xml/ns/jakartaee http://xmlns.eclipse.org/xml/ns/jakartaee/web-partialresponse_2_3.xsd" id="partial">
+    xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee ../build/web-partialresponse_2_3.xsd" id="partial">
 
   <changes>
     <update id="1">

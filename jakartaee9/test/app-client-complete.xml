@@ -17,11 +17,11 @@
 
 -->
 
-<application-client xmlns="http://xmlns.eclipse.org/xml/ns/jakartaee"
+<application-client xmlns="https://jakarta.ee/xml/ns/jakartaee"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xmlns:xml="http://www.w3.org/XML/1998/namespace" 
-    xsi:schemaLocation="http://xmlns.eclipse.org/xml/ns/jakartaee 
-      http://xmlns.eclipse.org/xml/ns/jakartaee/application-client_9.xsd"
+    xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee 
+      ../build/application-client_9.xsd"
     metadata-complete="true"
     version="9">
   <module-name>MyModule</module-name>

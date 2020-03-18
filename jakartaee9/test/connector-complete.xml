@@ -18,10 +18,10 @@
 -->
 
 <!-- A Full descriptor using all the elements defined in the schema -->
-<connector xmlns="http://xmlns.eclipse.org/xml/ns/jakartaee"
+<connector xmlns="https://jakarta.ee/xml/ns/jakartaee"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-           xsi:schemaLocation="http://xmlns.eclipse.org/xml/ns/jakartaee
-           http://xmlns.eclipse.org/xml/ns/jakartaee/connector_1_7.xsd"
+           xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+           ../build/connector_1_7.xsd"
            version="1.7" metadata-complete="true">
     <module-name>SimpleResourceAdapter</module-name>
     <display-name>Simple Resource Adapter</display-name>

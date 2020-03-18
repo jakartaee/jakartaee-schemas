@@ -17,10 +17,10 @@
 
 -->
 
-<web-app xmlns="http://xmlns.eclipse.org/xml/ns/jakartaee"
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
  xmlns:foobar="http://foobar.com"
- xsi:schemaLocation="http://xmlns.eclipse.org/xml/ns/jakartaee web-app_4_0.xsd http://foobar.com http://foobar.com/foobar.xsd"
+ xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee web-app_4_0.xsd http://foobar.com http://foobar.com/foobar.xsd"
  version="4.0">
   <default-context-path>/myapp</default-context-path>
   <request-character-encoding>UTF-8</request-character-encoding>

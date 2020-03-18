@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright (c) 2009, 2018 Oracle and/or its affiliates. All rights reserved.
+    Copyright (c) 2009, 2020 Oracle and/or its affiliates. All rights reserved.
 
     This program and the accompanying materials are made available under the
     terms of the Eclipse Public License v. 2.0, which is available at
@@ -18,12 +18,12 @@
 -->
 
 <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema"
-	    targetNamespace="http://xmlns.eclipse.org/xml/ns/jakartaee"
-	    xmlns:jakartaee="http://xmlns.eclipse.org/xml/ns/jakartaee"
+	    targetNamespace="https://jakarta.ee/xml/ns/jakartaee"
+	    xmlns:jakartaee="https://jakarta.ee/xml/ns/jakartaee"
 	    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 	    elementFormDefault="qualified"
 	    attributeFormDefault="unqualified"
-	    version="3.2">
+	    version="4.0">
 
   <xsd:annotation>
     <xsd:documentation>
@@ -35,21 +35,21 @@
     <xsd:documentation>
       <![CDATA[
 
-	This is the XML Schema for the EJB 3.2 deployment descriptor.
+	This is the XML Schema for the Enterprise Beans 4.0 deployment descriptor.
 
-        All EJB deployment descriptors must indicate
+        All Enterprise Beans deployment descriptors must indicate
 	the schema by using the Jakarta EE namespace:
 
-	http://xmlns.eclipse.org/xml/ns/jakartaee
+	https://jakarta.ee/xml/ns/jakartaee
 
 	and by indicating the version of the schema by
 	using the version element as shown below:
 
-	    <ejb-jar xmlns="http://xmlns.eclipse.org/xml/ns/jakartaee"
+	    <ejb-jar xmlns="https://jakarta.ee/xml/ns/jakartaee"
 	      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	      xsi:schemaLocation="http://xmlns.eclipse.org/xml/ns/jakartaee
-		  http://xmlns.eclipse.org/xml/ns/jakartaee/ejb-jar_3_2.xsd"
-	      version="3.2">
+	      xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+		  https://jakarta.ee/xml/ns/jakartaee/ejb-jar_4_0.xsd"
+	      version="4.0">
 	      ...
 	    </ejb-jar>
 
@@ -57,7 +57,7 @@
 	the schema using the xsi:schemaLocation attribute for the
 	Jakarta EE namespace with the following location:
 
-	http://xmlns.eclipse.org/xml/ns/jakartaee/ejb-jar_3_2.xsd
+	https://jakarta.ee/xml/ns/jakartaee/ejb-jar_3_2.xsd
 
 	]]>
     </xsd:documentation>
@@ -435,7 +435,7 @@
 	    cmp-version 1.x must denote a public field of the
 	    enterprise bean class or one of its superclasses.
 
-	    Support for entity beans is optional as of EJB 3.2.
+	    Support for entity beans is optional as of Enterprise Beans 3.2.
 
 	  </xsd:documentation>
 	</xsd:annotation>
@@ -459,7 +459,7 @@
 	    1.x
 	    2.x
 
-	Support for entity beans is optional as of EJB 3.2.
+	Support for entity beans is optional as of Enterprise Beans 3.2.
 
       </xsd:documentation>
     </xsd:annotation>
@@ -486,7 +486,7 @@
 	used only for collection-valued cmr-fields. It specifies the
 	type of the collection that is used.
 
-	Support for entity beans is optional as of EJB 3.2.
+	Support for entity beans is optional as of Enterprise Beans 3.2.
 
       </xsd:documentation>
     </xsd:annotation>
@@ -509,7 +509,7 @@
 	    specified by cmr-field-name in which the first
 	    letter is uppercased, prefixed by "get" or "set".
 
-	    Support for entity beans is optional as of EJB 3.2.
+	    Support for entity beans is optional as of Enterprise Beans 3.2.
 
 	  </xsd:documentation>
 	</xsd:annotation>
@@ -720,7 +720,7 @@
     <xsd:annotation>
       <xsd:documentation>
 
-	The ejb-jarType defines the root element of the EJB
+	The ejb-jarType defines the root element of the Enterprise Beans
 	deployment descriptor. It contains
 
 	    - an optional description of the ejb-jar file
@@ -809,16 +809,16 @@
     </xsd:sequence>
     <xsd:attribute name="version"
 		   type="jakartaee:dewey-versionType"
-		   fixed="3.2"
+		   fixed="4.0"
 		   use="required">
       <xsd:annotation>
 	<xsd:documentation>
 
 	  The version specifies the version of the
-	  EJB specification that the instance document must 
+	  Enterprise Beans specification that the instance document must 
 	  comply with. This information enables deployment tools
-	  to validate a particular EJB Deployment
-	  Descriptor with respect to a specific version of the EJB
+	  to validate a particular Enterprise Beans Deployment
+	  Descriptor with respect to a specific version of the Enterprise Beans
 	  schema. 
 
 	</xsd:documentation>
@@ -902,7 +902,7 @@
 	relationship, if specified, is unique within the ejb-jar
 	file.
 
-	Support for entity beans is optional as of EJB 3.2.
+	Support for entity beans is optional as of Enterprise Beans 3.2.
 
       </xsd:documentation>
     </xsd:annotation>
@@ -976,7 +976,7 @@
 	       </ejb-relationship-role>
 	  </ejb-relation>
 
-	  Support for entity beans is optional as of EJB 3.2.
+	  Support for entity beans is optional as of Enterprise Beans 3.2.
 
 	  ]]>
       </xsd:documentation>
@@ -1018,7 +1018,7 @@
 	    which the other ejb-relationship-role
 	    element specifies a multiplicity of One.
 
-	    Support for entity beans is optional as of EJB 3.2.
+	    Support for entity beans is optional as of Enterprise Beans 3.2.
 
 	  </xsd:documentation>
 	</xsd:annotation>
@@ -1053,7 +1053,7 @@
 	    <xsd:documentation>
 
 	      The ejb-ref-name element contains the name of
-	      an EJB reference. The EJB reference is an entry in
+	      an enterprise bean reference. The enterprise bean reference is an entry in
 	      the component's environment and is relative to the
 	      java:comp/env context.  The name must be unique within
 	      the component.
@@ -1070,8 +1070,8 @@
 	  <xsd:annotation>
 	    <xsd:documentation>
 
-	      The ejb-ref-name element contains the name of an EJB
-	      reference. The EJB reference is an entry in the
+	      The ejb-ref-name element contains the name of an enterprise bean
+	      reference. The enterprise bean reference is an entry in the
 	      component's environment and is relative to the
 	      java:comp/env context. The name must be unique
 	      within the component.
@@ -1157,7 +1157,7 @@
 	    <xsd:documentation>
 
 	      The ejb-ref-name element contains the name of
-	      an EJB reference. The EJB reference is an entry in
+	      an enterprise bean reference. The enterprise bean reference is an entry in
 	      the component's environment and is relative to the
 	      java:comp/env context.  The name must be unique within
 	      the component.
@@ -1174,8 +1174,8 @@
 	  <xsd:annotation>
 	    <xsd:documentation>
 
-	      The ejb-ref-name element contains the name of an EJB
-	      reference. The EJB reference is an entry in the
+	      The ejb-ref-name element contains the name of an enterprise bean
+	      reference. The enterprise bean reference is an entry in the
 	      component's environment and is relative to the
 	      java:comp/env context. The name must be unique
 	      within the component.
@@ -1260,7 +1260,7 @@
 	    <xsd:documentation>
 
 	      The ejb-ref-name element contains the name of
-	      an EJB reference. The EJB reference is an entry in
+	      an enterprise bean reference. The enterprise bean reference is an entry in
 	      the component's environment and is relative to the
 	      java:comp/env context.  The name must be unique within
 	      the component.
@@ -1277,8 +1277,8 @@
 	  <xsd:annotation>
 	    <xsd:documentation>
 
-	      The ejb-ref-name element contains the name of an EJB
-	      reference. The EJB reference is an entry in the
+	      The ejb-ref-name element contains the name of an enterprise bean
+	      reference. The enterprise bean reference is an entry in the
 	      component's environment and is relative to the
 	      java:comp/env context. The name must be unique
 	      within the component.
@@ -1366,7 +1366,7 @@
     <xsd:annotation>
       <xsd:documentation>
 
-        Support for entity beans is optional as of EJB 3.2.
+        Support for entity beans is optional as of Enterprise Beans 3.2.
 
 	The entity-beanType declares an entity bean. The declaration
 	consists of:
@@ -1400,10 +1400,10 @@
 	      field
 	    - an optional declaration of the bean's environment 
 	      entries
-	    - an optional declaration of the bean's EJB 
+	    - an optional declaration of the bean's  
 	      references
 	    - an optional declaration of the bean's local 
-	      EJB references
+	      references
 	    - an optional declaration of the bean's web 
 	      service references
 	    - an optional declaration of the security role 
@@ -1497,7 +1497,7 @@
 	    deferred to deployment time, the prim-key-class 
 	    element should specify java.lang.Object.
 
-	    Support for entity beans is optional as of EJB 3.2.
+	    Support for entity beans is optional as of Enterprise Beans 3.2.
 
 	  </xsd:documentation>
 	</xsd:annotation>
@@ -1527,13 +1527,13 @@
 
 	    The abstract-schema-name element specifies the name
 	    of the abstract schema type of an entity bean with 
-	    cmp-version 2.x. It is used in EJB QL queries. 
+	    cmp-version 2.x. It is used in Enterprise Beans QL queries. 
 
 	    For example, the abstract-schema-name for an entity 
 	    bean whose local interface is 
 	    com.acme.commerce.Order might be Order. 
 
-	    Support for entity beans is optional as of EJB 3.2.
+	    Support for entity beans is optional as of Enterprise Beans 3.2.
 
 	  </xsd:documentation>
 	</xsd:annotation>
@@ -1563,7 +1563,7 @@
 	    their names must correspond to the field names of
 	    the entity bean class that comprise the key.
 
-	    Support for entity beans is optional as of EJB 3.2.
+	    Support for entity beans is optional as of Enterprise Beans 3.2.
 
 	  </xsd:documentation>
 	</xsd:annotation>
@@ -1973,9 +1973,8 @@
               superclass around-timeout methods.
 	    - an optional declaration of the bean's environment
 	      entries
-	    - an optional declaration of the bean's EJB references
-	    - an optional declaration of the bean's local EJB
-	      references
+	    - an optional declaration of the bean's references
+	    - an optional declaration of the bean's local references
 	    - an optional declaration of the bean's web service
 	      references
 	    - an optional declaration of the security role 
@@ -2525,7 +2524,7 @@
 	    One
 	    Many
 
-	Support for entity beans is optional as of EJB 3.2.
+	Support for entity beans is optional as of Enterprise Beans 3.2.
 
       </xsd:documentation>
     </xsd:annotation>
@@ -2551,7 +2550,7 @@
 	    Bean
 	    Container
 
-	Support for entity beans is optional as of EJB 3.2.
+	Support for entity beans is optional as of Enterprise Beans 3.2.
 
       </xsd:documentation>
     </xsd:annotation>
@@ -2577,11 +2576,11 @@
 		- an optional specification of the result type 
 		  mapping, if the query is for a select method 
 		  and entity objects are returned.
-		- the EJB QL query string that defines the query.
+		- the Enterprise Beans QL query string that defines the query.
 
-	Queries that are expressible in EJB QL must use the ejb-ql
+	Queries that are expressible in Enterprise Beans QL must use the ejb-ql
 	element to specify the query. If a query is not expressible
-	in EJB QL, the description element should be used to
+	in Enterprise Beans QL, the description element should be used to
 	describe the semantics of the query and the ejb-ql element
 	should be empty.
 
@@ -2639,7 +2638,7 @@
 	      </ejb-ql>
 	  </query>
 
-	  Support for entity beans is optional as of EJB 3.2.
+	  Support for entity beans is optional as of Enterprise Beans 3.2.
 
 	  ]]>
       </xsd:documentation>
@@ -2667,7 +2666,7 @@
 	relationship-role-source elements to uniquely identify an
 	entity bean.
 
-	Support for entity beans is optional as of EJB 3.2.
+	Support for entity beans is optional as of Enterprise Beans 3.2.
 
       </xsd:documentation>
     </xsd:annotation>
@@ -2695,7 +2694,7 @@
 	description; and a list of ejb-relation elements, which
 	specify the container managed relationships.
 
-	Support for entity beans is optional as of EJB 3.2.
+	Support for entity beans is optional as of Enterprise Beans 3.2.
 
       </xsd:documentation>
     </xsd:annotation>
@@ -2854,9 +2853,9 @@
               superclass around-timeout methods.
 	    - an optional declaration of the bean's 
 	      environment entries
-	    - an optional declaration of the bean's EJB references
+	    - an optional declaration of the bean's references
 	    - an optional declaration of the bean's local 
-	      EJB references
+	      references
 	    - an optional declaration of the bean's web 
 	      service references
 	    - an optional declaration of the security role 
@@ -3008,7 +3007,7 @@
 	  <xsd:documentation>
 
 	    The init-method element specifies the mappings for
-	    EJB 2.x style create methods for an EJB 3.x bean.
+	    Enterprise Beans 2.x style create methods for an Enterprise Beans 3.x bean.
 	    This element can only be specified for stateful 
             session beans. 
 
@@ -3023,7 +3022,7 @@
 	  <xsd:documentation>
 
 	    The remove-method element specifies the mappings for
-	    EJB 2.x style remove methods for an EJB 3.x bean.
+	    Enterprise Beans 2.x style remove methods for an Enterprise Beans 3.x bean.
 	    This element can only be specified for stateful 
             session beans. 
 

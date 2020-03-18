@@ -17,10 +17,10 @@
 
 -->
 
-<xsd:schema xmlns:jakartaee="http://xmlns.eclipse.org/xml/ns/jakartaee"
+<xsd:schema xmlns:jakartaee="https://jakarta.ee/xml/ns/jakartaee"
             attributeFormDefault="unqualified" 
             elementFormDefault="qualified" 
-            targetNamespace="http://xmlns.eclipse.org/xml/ns/jakartaee" 
+            targetNamespace="https://jakarta.ee/xml/ns/jakartaee" 
             version="2.3" 
             xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <xsd:include schemaLocation="jakartaee_9.xsd" />
@@ -42,12 +42,12 @@
       the JavaServer Faces schema by indicating the JavaServer
       Faces namespace:</p>
       
-      <p>http://xmlns.eclipse.org/xml/ns/jakartaee</p>
+      <p>https://jakarta.ee/xml/ns/jakartaee</p>
       
       <p>and by indicating the version of the schema by
       using the version element as shown below:</p>
       
-      <pre>&lt;faces-config xmlns="http://xmlns.eclipse.org/xml/ns/jakartaee"
+      <pre>&lt;faces-config xmlns="https://jakarta.ee/xml/ns/jakartaee"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="..."
       version="2.2"&gt;
@@ -58,7 +58,7 @@
       version of the schema using xsi:schemaLocation attribute
       for jakartaee namespace with the following location:</p>
       
-      <p>http://xmlns.eclipse.org/xml/ns/jakartaee/web-facesconfig_2_3.xsd</p>
+      <p>https://jakarta.ee/xml/ns/jakartaee/web-facesconfig_2_3.xsd</p>
       
       ]]>
     </xsd:documentation>

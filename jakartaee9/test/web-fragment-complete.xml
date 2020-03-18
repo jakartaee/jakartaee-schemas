@@ -17,10 +17,10 @@
 
 -->
 
-<web-fragment xmlns="http://xmlns.eclipse.org/xml/ns/jakartaee"
+<web-fragment xmlns="https://jakarta.ee/xml/ns/jakartaee"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
  xmlns:foobar="http://foobar.com"
- xsi:schemaLocation="http://xmlns.eclipse.org/xml/ns/jakartaee web-fragment_4_0.xsd http://foobar.com http://foobar.com/foobar.xsd"
+ xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee web-fragment_4_0.xsd http://foobar.com http://foobar.com/foobar.xsd"
  metadata-complete="true"
  version="4.0">
   <name>A</name>
