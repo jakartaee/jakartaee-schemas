@@ -257,7 +257,7 @@
 	    the name for an activation configuration property of
 	    a message-driven bean.
 
-	    For JMS message-driven beans, the following property
+	    For Jakarta Messaging message-driven beans, the following property
 	    names are recognized: acknowledgeMode,
 	    messageSelector, destinationType, subscriptionDurability,
             destinationLookup, connectionFactoryLookup, subscriptionName,
@@ -2933,7 +2933,7 @@
 	    service endpoint interface. The service-endpoint
 	    element may only be specified for a stateless
 	    session bean. The specified interface must be a
-	    valid JAX-RPC service endpoint interface.
+	    valid Jakarta XML RPC service endpoint interface.
 
 	  </xsd:documentation>
 	</xsd:annotation>
