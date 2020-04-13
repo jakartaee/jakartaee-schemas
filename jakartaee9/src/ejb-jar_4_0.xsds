@@ -1400,9 +1400,9 @@
 	      field
 	    - an optional declaration of the bean's environment 
 	      entries
-	    - an optional declaration of the bean's  
+	    - an optional declaration of the bean's enterprise bean 
 	      references
-	    - an optional declaration of the bean's local 
+	    - an optional declaration of the bean's local enterprise bean 
 	      references
 	    - an optional declaration of the bean's web 
 	      service references
@@ -1973,8 +1973,9 @@
               superclass around-timeout methods.
 	    - an optional declaration of the bean's environment
 	      entries
-	    - an optional declaration of the bean's references
-	    - an optional declaration of the bean's local references
+	    - an optional declaration of the bean's enterprise bean references
+	    - an optional declaration of the bean's local enterprise bean 
+		  references
 	    - an optional declaration of the bean's web service
 	      references
 	    - an optional declaration of the security role 
@@ -2853,8 +2854,8 @@
               superclass around-timeout methods.
 	    - an optional declaration of the bean's 
 	      environment entries
-	    - an optional declaration of the bean's references
-	    - an optional declaration of the bean's local 
+	    - an optional declaration of the bean's enterprise bean references
+	    - an optional declaration of the bean's local enterprise bean
 	      references
 	    - an optional declaration of the bean's web 
 	      service references
