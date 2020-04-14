@@ -73,7 +73,7 @@
 <!-- **************************************************** -->
 
   <xsd:include schemaLocation="jakartaee_9.xsd"/>
-  <xsd:include schemaLocation="jsp_2_3.xsd"/>
+  <xsd:include schemaLocation="jsp_3_0.xsd"/>
 
 <!-- **************************************************** -->
 
