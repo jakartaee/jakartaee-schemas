@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright (c) 2009, 2018 Oracle and/or its affiliates. All rights reserved.
+    Copyright (c) 2009, 2020 Oracle and/or its affiliates. All rights reserved.
 
     This program and the accompanying materials are made available under the
     terms of the Eclipse Public License v. 2.0, which is available at
@@ -20,7 +20,7 @@
 <webservices xmlns="https://jakarta.ee/xml/ns/jakartaee"
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee 
-               ../build/jakartaee_web_services_1_4.xsd"
+               jakartaee_web_services_1_4.xsd"
              version="1.4">
   <webservice-description>
     <webservice-description-name>JoesServices</webservice-description-name>

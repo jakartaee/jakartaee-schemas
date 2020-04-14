@@ -21,7 +21,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xmlns:xml="http://www.w3.org/XML/1998/namespace" 
     xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee 
-      ../build/permissions_7.xsd"
+      permissions_7.xsd"
     version="7">
 
   <permission>
