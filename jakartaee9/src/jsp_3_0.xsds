@@ -18,8 +18,8 @@
 -->
 
 <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema"
-	    targetNamespace="http://xmlns.eclipse.org/xml/ns/jakartaee"
-	    xmlns:jakartaee="http://xmlns.eclipse.org/xml/ns/jakartaee"
+	    targetNamespace="https://jakarta.ee/xml/ns/jakartaee"
+	    xmlns:jakartaee="https://jakarta.ee/xml/ns/jakartaee"
 	    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 	    elementFormDefault="qualified"
 	    attributeFormDefault="unqualified"

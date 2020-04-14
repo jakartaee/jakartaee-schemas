@@ -17,9 +17,9 @@
 
 -->
 
-<faces-config xmlns="http://xmlns.eclipse.org/xml/ns/jakartaee"
+<faces-config xmlns="https://jakarta.ee/xml/ns/jakartaee"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xmlns.eclipse.org/xml/ns/jakartaee http://xmlns.eclipse.org/xml/ns/jakartaee/web-facesconfig_2_3.xsd"
+    xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee ../build/web-facesconfig_2_3.xsd"
     version="2.3">
 
 

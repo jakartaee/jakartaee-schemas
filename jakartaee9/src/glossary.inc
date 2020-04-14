@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2009, 2018 Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 2009, 2020 Oracle and/or its affiliates. All rights reserved.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0, which is available at
@@ -15,12 +15,12 @@
  */
 
 The following definitions that appear in the common
-shareable schema(s) of Java EE deployment descriptors should be
+shareable schema(s) of Jakarta EE deployment descriptors should be
 interpreted with respect to the context they are included:
 
 
 Deployment Component may indicate one of the following:
-    java ee application;
+    Jakarta EE application;
     application client;
     web application;
     enterprise bean;

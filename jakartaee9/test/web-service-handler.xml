@@ -17,13 +17,13 @@
 
 -->
 
-<webservices xmlns="http://xmlns.eclipse.org/xml/ns/jakartaee"
+<webservices xmlns="https://jakarta.ee/xml/ns/jakartaee"
              xmlns:wsdl="http://Hello.org"
              xmlns:soap1="http://HandlerInfo.org/Server1"
              xmlns:soap2="http://HandlerInfo.org/Server2"
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-             xsi:schemaLocation="http://xmlns.eclipse.org/xml/ns/jakartaee 
-               http://xmlns.eclipse.org/xml/ns/jakartaee/jakartaee_web_services_1_4.xsd"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee 
+               ../build/jakartaee_web_services_1_4.xsd"
              version="1.4">
   <webservice-description>
     <webservice-description-name>HandlerInfoTest</webservice-description-name>
