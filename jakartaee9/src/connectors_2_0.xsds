@@ -23,7 +23,7 @@
 	    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 	    elementFormDefault="qualified"
 	    attributeFormDefault="unqualified"
-	    version="1.7">
+	    version="2.0">
 
   <xsd:annotation>
     <xsd:documentation>
@@ -35,9 +35,9 @@
     <xsd:documentation>
       <![CDATA[
 
-	This is the XML Schema for the Connector 1.7 deployment
+	This is the XML Schema for the Jakarta Connectors 2.0 deployment
 	descriptor.  The deployment descriptor must be named
-	"META-INF/ra.xml" in the connector's rar file.  All Connector
+	"META-INF/ra.xml" in the connector's rar file.  All Jakarta Connectors
 	deployment descriptors must indicate the connector resource
 	adapter schema by using the Jakarta EE namespace:
 
@@ -49,8 +49,8 @@
 	    <connector xmlns="https://jakarta.ee/xml/ns/jakartaee"
 	      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	      xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
-		 https://jakarta.ee/xml/ns/jakartaee/connector_1_7.xsd"
-	      version="1.7">
+		 https://jakarta.ee/xml/ns/jakartaee/connectors_2_0.xsd"
+	      version="2.0">
 	      ...
 	    </connector>
 
@@ -58,7 +58,7 @@
 	the schema using the xsi:schemaLocation attribute for Jakarta EE
 	namespace with the following location:
 
-	https://jakarta.ee/xml/ns/jakartaee/connector_1_7.xsd
+	https://jakarta.ee/xml/ns/jakartaee/connectors_2_0.xsd
 
 	]]>
     </xsd:documentation>
@@ -144,7 +144,7 @@
 	Bean Validation annotation or its XML validation
 	descriptor equivalent to indicate that a configuration
 	property is required to be specified by the deployer.
-	See the Connectors specification for more information. 
+	See the Jakarta Connectors specification for more information. 
 
       </xsd:documentation>
     </xsd:annotation>
@@ -266,7 +266,7 @@
 	      </authentication-mechanism-type>
 
 	      Any additional security mechanisms are outside the
-	      scope of the Connector architecture specification.
+	      scope of the Jakarta Connectors architecture specification.
 
 	      ]]>
 	  </xsd:documentation>
@@ -416,7 +416,7 @@
 	      The element config-property-ignore is used to specify 
 	      whether the configuration tools must ignore considering the 
 	      configuration property during auto-discovery of
-	      Configuration properties. See the Connector specification for
+	      Configuration properties. See the Jakarta Connectors specification for
 	      more details. If unspecified, the container must not ignore
 	      the configuration property during auto-discovery.
 	      This element must be one of the following, "true" or "false".
@@ -435,7 +435,7 @@
 	      The element config-property-supports-dynamic-updates is used to specify 
 	      whether the configuration property allows its value to be updated, by
 	      application server's configuration tools, during the lifetime of
-	      the JavaBean instance. See the Connector specification for
+	      the JavaBean instance. See the Jakarta Connectors specification for
 	      more details. If unspecified, the container must not dynamically
 	      reconfigure the property.
 	      This element must be one of the following, "true" or "false".
@@ -454,7 +454,7 @@
 	      The element config-property-confidential is used to specify 
 	      whether the configuration property is confidential and
 	      recommends application server's configuration tools to use special 
-	      visual aids for editing them. See the Connector specification for
+	      visual aids for editing them. See the Jakarta Connectors specification for
 	      more details. If unspecified, the container must not treat the
 	      property as confidential.
 	      This element must be one of the following, "true" or "false".
@@ -705,7 +705,7 @@
     
     <xsd:attribute name="version"
 		   type="jakartaee:dewey-versionType"
-		   fixed="1.7"
+		   fixed="2.0"
 		   use="required">
       <xsd:annotation>
 	<xsd:documentation>

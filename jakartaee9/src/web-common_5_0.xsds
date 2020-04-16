@@ -23,7 +23,7 @@
             xmlns:xsd="http://www.w3.org/2001/XMLSchema"
             elementFormDefault="qualified"
             attributeFormDefault="unqualified"
-            version="4.0">
+            version="5.0">
 
   <xsd:annotation>
     <xsd:documentation>
@@ -35,7 +35,7 @@
     <xsd:documentation>
       <![CDATA[
 
-        This is the common XML Schema for the Servlet 4.0 deployment descriptor.
+        This is the common XML Schema for the Jakarta Servlet 5.0 deployment descriptor.
         This file is in turn used by web.xml and web-fragment.xml
         web application's war file.  All Servlet deployment descriptors
         must indicate the web common schema by using the Jakarta EE
@@ -49,7 +49,7 @@
             <web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
               xsi:schemaLocation="..."
-              version="4.0">
+              version="5.0">
               ...
             </web-app>
 
@@ -57,7 +57,7 @@
         the schema using the xsi:schemaLocation attribute for Jakarta EE
         namespace with the following location:
 
-        https://jakarta.ee/xml/ns/jakartaee/web-common_4_0.xsd
+        https://jakarta.ee/xml/ns/jakartaee/web-common_5_0.xsd
 
         ]]>
     </xsd:documentation>
@@ -1199,7 +1199,7 @@
       </xsd:documentation>
     </xsd:annotation>
     <xsd:restriction base="xsd:token">
-      <xsd:enumeration value="4.0"/>
+      <xsd:enumeration value="5.0"/>
     </xsd:restriction>
   </xsd:simpleType>
 

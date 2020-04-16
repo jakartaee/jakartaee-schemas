@@ -23,7 +23,7 @@
 	    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 	    elementFormDefault="qualified"
 	    attributeFormDefault="unqualified"
-	    version="1.4">
+	    version="2.0">
 
   <xsd:annotation>
     <xsd:documentation>
@@ -61,8 +61,8 @@
 	    <webservices xmlns="https://jakarta.ee/xml/ns/jakartaee"
 	      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	      xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
-		https://jakarta.ee/xml/ns/jakartaee/jakartaee_web_services_1_4.xsd"
-	      version="1.4">
+		https://jakarta.ee/xml/ns/jakartaee/jakartaee_web_services_2_0.xsd"
+	      version="2.0">
 	      ...
 	    </webservices>
 
@@ -70,7 +70,7 @@
 	schema using the xsi:schemaLocation attribute for the Jakarta EE
 	namespace with the following location:
 
-	https://jakarta.ee/xml/ns/jakartaee/jakartaee_web_services_1_4.xsd
+	https://jakarta.ee/xml/ns/jakartaee/jakartaee_web_services_2_0.xsd
 
 	]]>
     </xsd:documentation>
@@ -511,12 +511,12 @@
 
     <xsd:attribute name="version"
 		   type="jakartaee:dewey-versionType"
-		   fixed="1.4"
+		   fixed="2.0"
 		   use="required">
       <xsd:annotation>
 	<xsd:documentation>
 
-	  The required value for the version is 1.4.
+	  The required value for the version is 2.0.
 
 	</xsd:documentation>
       </xsd:annotation>
