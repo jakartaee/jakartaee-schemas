@@ -23,7 +23,7 @@
 	    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 	    elementFormDefault="qualified"
 	    attributeFormDefault="unqualified"
-	    version="7">
+	    version="9">
 
   <xsd:annotation>
     <xsd:documentation>
@@ -35,7 +35,7 @@
     <xsd:documentation>
       <![CDATA[
 
-	This is the XML Schema for the application or module declared permissions 7.
+	This is the XML Schema for the application or module declared permissions 9.
         The declared permissions file must be named "META-INF/permissions.xml" in the
 	application's ear file, or in a module's META-INF/permissions.xml if
         the module is deployed standalone.  All declared permissions must indicate
@@ -50,8 +50,8 @@
 	    <permissions xmlns="https://jakarta.ee/xml/ns/jakartaee"
 	      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	      xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee 
-		https://jakarta.ee/xml/ns/jakartaee/permissions_7.xsd"
-	      version="7">
+		https://jakarta.ee/xml/ns/jakartaee/permissions_9.xsd"
+	      version="9">
 	      ...
 	    </permisssions>
 
@@ -59,7 +59,7 @@
 	the schema using the xsi:schemaLocation attribute for Jakarta EE
 	namespace with the following location:
 
-	https://jakarta.ee/xml/ns/jakartaee/permissions_7.xsd
+	https://jakarta.ee/xml/ns/jakartaee/permissions_9.xsd
 
 	]]>
     </xsd:documentation>
@@ -131,12 +131,12 @@
 
       <xsd:attribute name="version"
 		   type="jakartaee:dewey-versionType"
-		   fixed="7"
+		   fixed="9"
 		   use="required">
         <xsd:annotation>
 	  <xsd:documentation>
 
-	    The required value for the version is 7.
+	    The required value for the version is 9.
 
 	  </xsd:documentation>
         </xsd:annotation>
