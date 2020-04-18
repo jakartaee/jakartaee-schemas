@@ -21,8 +21,8 @@
 <connector xmlns="https://jakarta.ee/xml/ns/jakartaee"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
-           connector_1_7.xsd"
-           version="1.7" metadata-complete="true">
+           connector_2_0.xsd"
+           version="2.0" metadata-complete="true">
     <module-name>SimpleResourceAdapter</module-name>
     <display-name>Simple Resource Adapter</display-name>
     <vendor-name>Java Software</vendor-name>
@@ -127,5 +127,5 @@
     <required-work-context>com.wombat.MyOtherCustomWorkContext</required-work-context>
 
 </connector>
-<?validateAgainst connector_1_7.xsd?>
+<?validateAgainst connector_2_0.xsd?>
 

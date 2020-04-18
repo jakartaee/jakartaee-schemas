@@ -19,8 +19,8 @@
 
 <faces-config xmlns="https://jakarta.ee/xml/ns/jakartaee"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee web-facesconfig_2_3.xsd"
-    version="2.3">
+    xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee web-facesconfig_3_0.xsd"
+    version="3.0">
 
 
   <name>[]][</name>
@@ -28,7 +28,7 @@
 
 </faces-config>
 
-<?validateAgainst web-facesconfig_2_3.xsd ?>
+<?validateAgainst web-facesconfig_3_0.xsd ?>
 <?expectError 26:cvc-pattern-valid ?>
 <?expectError 26:cvc-complex-type.2.2 ?>
 <?expectError 27:cvc-complex-type.2.4.b ?>

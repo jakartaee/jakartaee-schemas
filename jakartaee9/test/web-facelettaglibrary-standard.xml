@@ -20,8 +20,8 @@
 <facelet-taglib xmlns="https://jakarta.ee/xml/ns/jakartaee"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
  xmlns:foobar="http://mojarra.dev.java.net/mojarra_ext"
- xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee web-facelettaglibrary_2_3.xsd http://mojarra.dev.java.net/mojarra_ext http://mojarra.dev.java.net/mojarra_ext/mojarra_ext.xsd"
- version="2.3"
+ xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee web-facelettaglibrary_3_0.xsd http://mojarra.dev.java.net/mojarra_ext http://mojarra.dev.java.net/mojarra_ext/mojarra_ext.xsd"
+ version="3.0"
 >
     <namespace>http://mojarra.dev.java.net/mojarra_ext</namespace>
     <tag>
@@ -54,4 +54,4 @@
     -->
 
 </facelet-taglib>
-<?validateAgainst web-facelettaglibrary_2_3.xsd ?>
+<?validateAgainst web-facelettaglibrary_3_0.xsd ?>

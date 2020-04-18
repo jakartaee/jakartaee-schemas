@@ -21,11 +21,11 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xmlns:xml="http://www.w3.org/XML/1998/namespace" 
     xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee 
-      permissions_7.xsd"
-    version="7">
+      permissions_9.xsd"
+    version="9">
 
 
 
 </permissions>
 
-<?validateAgainst permissions_7.xsd?>
+<?validateAgainst permissions_9.xsd?>
