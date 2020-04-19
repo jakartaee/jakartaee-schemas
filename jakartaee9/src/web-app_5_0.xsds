@@ -127,8 +127,9 @@
       <xsd:annotation>
         <xsd:documentation>
 
-          The ejb-local-ref-name element contains the name of an EJB
-          reference. The EJB reference is an entry in the web
+          The ejb-local-ref-name element contains the name of an 
+          Jakarta Enterprise Beans reference. The Jakarta Enterprise 
+          Beans reference is an entry in the web
           application's environment and is relative to the
           java:comp/env context.  The name must be unique within
           the web application.
@@ -145,11 +146,11 @@
       <xsd:annotation>
         <xsd:documentation>
 
-          The ejb-ref-name element contains the name of an EJB
-          reference. The EJB reference is an entry in the web
-          application's environment and is relative to the
-          java:comp/env context.  The name must be unique within
-          the web application.
+          The ejb-ref-name element contains the name of an Jakarta 
+          Enterprise Beans reference. The Jakarta Enterprise Beans 
+          reference is an entry in the web application's environment 
+          and is relative to the java:comp/env context.  
+          The name must be unique within the web application.
 
           It is recommended that name is prefixed with "ejb/".
 

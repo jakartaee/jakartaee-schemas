@@ -103,7 +103,7 @@
 		<authentication-mechanism>
 		    <authentication-mechanism-type>BasicPassword</authentication-mechanism-type>
 	            <!-- TEST: @since 1.5 valid credential-interface -->
-		    <credential-interface>javax.resource.spi.security.PasswordCredentialTYPO</credential-interface>
+		    <credential-interface>jakarta.resource.spi.security.PasswordCredentialTYPO</credential-interface>
 		</authentication-mechanism>
 		<reauthentication-support>false</reauthentication-support>
 	</outbound-resourceadapter>

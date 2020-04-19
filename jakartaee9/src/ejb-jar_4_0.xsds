@@ -35,9 +35,9 @@
     <xsd:documentation>
       <![CDATA[
 
-	This is the XML Schema for the Enterprise Beans 4.0 deployment descriptor.
+	This is the XML Schema for the Jakarta Enterprise Beans 4.0 deployment descriptor.
 
-        All Enterprise Beans deployment descriptors must indicate
+    All Jakarta Enterprise Beans deployment descriptors must indicate
 	the schema by using the Jakarta EE namespace:
 
 	https://jakarta.ee/xml/ns/jakartaee
@@ -720,7 +720,7 @@
     <xsd:annotation>
       <xsd:documentation>
 
-	The ejb-jarType defines the root element of the Enterprise Beans
+	The ejb-jarType defines the root element of the Jakarta Enterprise Beans
 	deployment descriptor. It contains
 
 	    - an optional description of the ejb-jar file
@@ -814,12 +814,12 @@
       <xsd:annotation>
 	<xsd:documentation>
 
-	  The version specifies the version of the
+	  The version specifies the version of the Jakarta
 	  Enterprise Beans specification that the instance document must 
 	  comply with. This information enables deployment tools
-	  to validate a particular Enterprise Beans Deployment
-	  Descriptor with respect to a specific version of the Enterprise Beans
-	  schema. 
+	  to validate a particular Jakarta Enterprise Beans Deployment
+	  Descriptor with respect to a specific version of the Jakarta Enterprise 
+	  Beans schema. 
 
 	</xsd:documentation>
       </xsd:annotation>
@@ -2577,11 +2577,11 @@
 		- an optional specification of the result type 
 		  mapping, if the query is for a select method 
 		  and entity objects are returned.
-		- the Enterprise Beans QL query string that defines the query.
+		- the Jakarta Enterprise Beans QL query string that defines the query.
 
-	Queries that are expressible in Enterprise Beans QL must use the ejb-ql
-	element to specify the query. If a query is not expressible
-	in Enterprise Beans QL, the description element should be used to
+	Queries that are expressible in Jakarta Enterprise Beans QL must use the 
+	ejb-ql element to specify the query. If a query is not expressible
+	in Jakarta Enterprise Beans QL, the description element should be used to
 	describe the semantics of the query and the ejb-ql element
 	should be empty.
 

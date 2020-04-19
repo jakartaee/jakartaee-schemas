@@ -210,7 +210,7 @@
   <jms-connection-factory>
      <description>A partial JMSConnectionFactory definition</description>
      <name>java:app/MyApp/myJMSCF</name>
-     <interface-name>javax.jms.QueueConnectionFactory</interface-name>
+     <interface-name>jakarta.jms.QueueConnectionFactory</interface-name>
      <class-name>com.example.QueueConnectionFactoryImpl</class-name>
      <transactional>true</transactional>
      <max-pool-size>5</max-pool-size>
@@ -222,7 +222,7 @@
    <jms-destination>
       <description>JMS Queue definition</description>
       <name>java:app/MyApp/myJMSQ</name>
-      <interface-name>javax.jms.Queue</interface-name>
+      <interface-name>jakarta.jms.Queue</interface-name>
       <class-name>com.example.QueueImpl</class-name>
       <resource-adapter>MYRA</resource-adapter>
       <destination-name>Queue10</destination-name>

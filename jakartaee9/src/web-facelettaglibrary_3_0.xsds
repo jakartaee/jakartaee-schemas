@@ -39,8 +39,8 @@
       Standard Facelets View Declaration Language (Facelets VDL)
       (Version 3.0).</p>
       
-      <p>JSF 3.0 Facelet Tag Libraries that wish to conform to this
-      schema must declare it in the following manner.</p>
+      <p>Jakarta Server faces 3.0 Facelet Tag Libraries that wish to conform to 
+      this schema must declare it in the following manner.</p>
       
       &lt;facelet-taglib xmlns="https://jakarta.ee/xml/ns/jakartaee"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -403,7 +403,7 @@
       <xsd:documentation><![CDATA[<p>
 
         Within a tag element, the behavior element encapsulates
-        information specific to a JSF Behavior.
+        information specific to a Jakarta Server Faces Behavior.
         
       </p>]]></xsd:documentation>
     </xsd:annotation>
@@ -455,7 +455,7 @@
 
       <p><span class="changed_modified_2_2
       changed_modified_2_3">Within</span> a tag element, the component
-      element encapsulates information specific to a JSF
+      element encapsulates information specific to a Jakarta Server Faces
       UIComponent.</p>
 
 <div class="changed_added_2_2 changed_deleted_2_3">
@@ -539,7 +539,7 @@ or <code>&lt;handler-class&gt;</code> among its child elements.</p>
       <xsd:documentation><![CDATA[<p>
 
         Within a tag element, the converter element encapsulates
-        information specific to a JSF Converter.
+        information specific to a Jakarta Server Faces Converter.
         
       </p>]]></xsd:documentation>
     </xsd:annotation>
@@ -590,7 +590,7 @@ or <code>&lt;handler-class&gt;</code> among its child elements.</p>
       <xsd:documentation><![CDATA[<p>
 
         Within a tag element, the validator element encapsulates
-        information specific to a JSF Validator.
+        information specific to a Jakarta Server Faces Validator.
         
       </p>]]></xsd:documentation>
     </xsd:annotation>

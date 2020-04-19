@@ -28,7 +28,7 @@
     <tag>
         <tag-name>regexValidator</tag-name>
         <validator>
-            <validator-id>javax.faces.RegularExpression</validator-id>
+            <validator-id>jakarta.faces.RegularExpression</validator-id>
         </validator>
     </tag>
     <composite-library-name>compositeTest</composite-library-name>
