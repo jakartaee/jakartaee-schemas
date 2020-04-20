@@ -83,8 +83,8 @@
 
 	The application-client element is the root element of an
 	application client deployment descriptor.  The application
-	client deployment descriptor describes the Jakarta Enterprise 
-	Beans components and external resources referenced by the 
+	client deployment descriptor describes the enterprise bean 
+	components and external resources referenced by the 
 	application client.
 
       </xsd:documentation>
@@ -109,8 +109,8 @@
       <xsd:annotation>
 	<xsd:documentation>
 
-	  The ejb-ref-name element contains the name of an Jakarta Enterprise 
-	  Beans reference. The Jakarta Enterprise Beans reference is an entry 
+	  The ejb-ref-name element contains the name of an enterprise bean 
+	  reference. The enterprise bean reference is an entry 
 	  in the application client's environment and is relative to the
 	  java:comp/env context. The name must be unique within the
 	  application client.

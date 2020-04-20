@@ -35,9 +35,9 @@
     <xsd:documentation>
       <![CDATA[
 
-	This is the XML Schema for the Jakarta Connectors 2.0 deployment
+	This is the XML Schema for the Connectors 2.0 deployment
 	descriptor.  The deployment descriptor must be named
-	"META-INF/ra.xml" in the connector's rar file.  All Jakarta Connectors
+	"META-INF/ra.xml" in the connector's rar file.  All connector
 	deployment descriptors must indicate the connector resource
 	adapter schema by using the Jakarta EE namespace:
 

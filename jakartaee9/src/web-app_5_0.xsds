@@ -35,7 +35,7 @@
     <xsd:documentation>
       <![CDATA[
 
-        This is the XML Schema for the Jakarta Servlet 5.0 deployment descriptor.
+        This is the XML Schema for the Servlet 5.0 deployment descriptor.
         The deployment descriptor must be named "WEB-INF/web.xml" in the
         web application's war file.  All Servlet deployment descriptors
         must indicate the web application schema by using the Jakarta EE
@@ -128,8 +128,8 @@
         <xsd:documentation>
 
           The ejb-local-ref-name element contains the name of an 
-          Jakarta Enterprise Beans reference. The Jakarta Enterprise 
-          Beans reference is an entry in the web
+          enterprise bean reference. The enterprise 
+          bean reference is an entry in the web
           application's environment and is relative to the
           java:comp/env context.  The name must be unique within
           the web application.
@@ -146,8 +146,8 @@
       <xsd:annotation>
         <xsd:documentation>
 
-          The ejb-ref-name element contains the name of an Jakarta 
-          Enterprise Beans reference. The Jakarta Enterprise Beans 
+          The ejb-ref-name element contains the name of an 
+          enterprise bean reference. The enterprise bean 
           reference is an entry in the web application's environment 
           and is relative to the java:comp/env context.  
           The name must be unique within the web application.

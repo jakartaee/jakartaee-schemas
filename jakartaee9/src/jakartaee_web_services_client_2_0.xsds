@@ -94,7 +94,7 @@
 	    element that is injected or returned when a JNDI lookup is done.
 	    This must be either a fully qualified name of Service class or 
 	    the fully qualified name of service endpoint interface class. 
-	    This is only used with Jakarta Enterprise Web Services runtime where
+	    This is only used with Jakarta XML Web Services runtime where
       the corresponding @WebServiceRef annotation can be used to denote both 
       a Service or a Port.
 
@@ -190,7 +190,7 @@
 		       minOccurs="0" maxOccurs="1">
 	    <xsd:annotation>
 	      <xsd:documentation>
-		 To be used with Jakarta Enterprise Web Services based runtime only.
+		 To be used with Jakarta XML Web Services based runtime only.
 	      </xsd:documentation>
 	    </xsd:annotation>
 	  </xsd:element>
@@ -263,8 +263,8 @@
         <xsd:annotation>
           <xsd:documentation>
 
-            This specifies the WS-Addressing requirements for a Jakarta Enterprise Web 
-            Services web service. It corresponds to jakarta.xml.ws.soap.Addressing
+            This specifies the WS-Addressing requirements for a Jakarta XML 
+            web service. It corresponds to jakarta.xml.ws.soap.Addressing
             annotation or its feature jakarta.xml.ws.soap.AddressingFeature.
 
             See the addressingType for more information.
@@ -282,7 +282,7 @@
 
             Corresponds to the jakarta.xml.ws.RespectBinding annotation
             or its corresponding jakarta.xml.ws.RespectBindingFeature web
-            service feature. This is used to control whether a Jakarta Enterprise Web 
+            service feature. This is used to control whether a Jakarta XML Web 
             Services implementation must respect/honor the contents of the
             wsdl:binding in the WSDL that is associated with the service.
 
@@ -502,8 +502,8 @@
     <xsd:annotation>
       <xsd:documentation>
 
-        This specifies the WS-Addressing requirements for a Jakarta Enterprise Web Services 
-        web service. It corresponds to jakarta.xml.ws.soap.Addressing annotation or its
+        This specifies the WS-Addressing requirements for a Jakarta XML web 
+        service. It corresponds to jakarta.xml.ws.soap.Addressing annotation or its
         feature jakarta.xml.ws.soap.AddressingFeature.
 
         If the "enabled" element is "true", WS-Addressing is enabled.
@@ -566,7 +566,7 @@
 
         Corresponds to the jakarta.xml.ws.RespectBinding annotation
         or its corresponding jakarta.xml.ws.RespectBindingFeature web
-        service feature. This is used to control whether a Jakarta Enterprise 
+        service feature. This is used to control whether a Jakarta XML 
         Web Services implementation must respect/honor the contents of the
         wsdl:binding in the WSDL that is associated with the service.
 
@@ -625,7 +625,7 @@
 	<xsd:annotation>
 	  <xsd:documentation>
 
-	    Not to be specified for Jakarta Enterprise Web Services runtime
+	    Not to be specified for Jakarta XML Web Services runtime
 
 	  </xsd:documentation>
 	</xsd:annotation>
@@ -640,7 +640,7 @@
 	    Defines the QName of a SOAP header that will be processed by the
 	    handler.
 
-	    Not to be specified for Jakarta Enterprise Web Services runtime
+	    Not to be specified for Jakarta XML Web Services runtime
 
 	  </xsd:documentation>
 	</xsd:annotation>
@@ -668,7 +668,7 @@
             specified, the handler is assumed to be associated with
             all ports of the service.
 
-	    Not to be specified for Jakarta Enterprise Web Services runtime
+	    Not to be specified for Jakarta XML Web Services runtime
 
 	  </xsd:documentation>
 	</xsd:annotation>

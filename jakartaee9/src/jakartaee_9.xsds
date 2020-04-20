@@ -723,8 +723,7 @@
 
           The ejb-linkType is used by ejb-link
           elements in the ejb-ref or ejb-local-ref elements to specify
-          that an Jakarta Enterprise Beans reference is linked to 
-          enterprise bean.
+          that an enterprise bean reference is linked to enterprise bean.
 
           The value of the ejb-link element must be the ejb-name of an
           enterprise bean in the same ejb-jar file or in another ejb-jar
@@ -765,7 +764,7 @@
         The declaration consists of:
 
             - an optional description
-            - the Jakarta Enterprise Beans reference name used in the code of the 
+            - the enterprise bean's reference name used in the code of the 
               Deployment Component that's referencing the enterprise bean.
             - the optional expected type of the referenced enterprise bean
             - the optional expected local interface of the referenced 
@@ -813,11 +812,10 @@
       <xsd:documentation>
         <![CDATA[
 
-          The ejb-ref-name element contains the name of an Jakarta Enterprise 
-          Beans reference. The Jakarta Enterprise Beans reference is an entry 
-          in the Deployment Component's environment and is relative to the
-          java:comp/env context.  The name must be unique within the
-          Deployment Component.
+          The ejb-ref-name element contains the name of an enterprise bean reference. 
+          The enterprise bean reference is an entry in the Deployment Component's 
+          environment and is relative to the java:comp/env context.  The name must 
+          be unique within the Deployment Component.
 
           It is recommended that name is prefixed with "ejb/".
 
@@ -845,7 +843,7 @@
         The declaration consists of:
 
             - an optional description
-            - the Jakarta Enterprise Beans reference name used in the code of
+            - the enterprise bean's reference name used in the code of
               the Deployment Component that's referencing the enterprise
               bean. 
             - the optional expected type of the referenced enterprise bean
@@ -1317,7 +1315,7 @@
     <xsd:annotation>
       <xsd:documentation>
 
-        Configuration of a Jakarta Messaging Connection Factory.
+        Configuration of a Messaging Connection Factory.
 
       </xsd:documentation>
     </xsd:annotation>
@@ -1328,7 +1326,7 @@
         <xsd:annotation>
           <xsd:documentation>
 
-            Description of this Jakarta Messaging Connection Factory.
+            Description of this Messaging Connection Factory.
 
           </xsd:documentation>
         </xsd:annotation>
@@ -1339,7 +1337,7 @@
           <xsd:documentation>
 
             The name element specifies the JNDI name of the
-            Jakarta Messaging connection factory being defined.
+            messaging connection factory being defined.
 
           </xsd:documentation>
         </xsd:annotation>
@@ -1350,7 +1348,7 @@
         <xsd:annotation>
           <xsd:documentation>
 
-              Fully-qualified name of the Jakarta Messaging connection factory
+              Fully-qualified name of the messaging connection factory
               interface.  Permitted values are jakarta.jms.ConnectionFactory,
               jakarta.jms.QueueConnectionFactory, or 
               jakarta.jms.TopicConnectionFactory.  If not specified,
@@ -1365,8 +1363,8 @@
         <xsd:annotation>
           <xsd:documentation>
 
-              Fully-qualified name of the Jakarta Messaging connection 
-              factory implementation class.  Ignored if a resource adapter  
+              Fully-qualified name of the messaging connection factory 
+              implementation class.  Ignored if a resource adapter  
               is used.
 
           </xsd:documentation>
@@ -1425,7 +1423,7 @@
         <xsd:annotation>
           <xsd:documentation>
 
-            Jakarta Messaging Connection Factory property.  This may be a vendor-specific
+            Messaging Connection Factory property.  This may be a vendor-specific
             property or a less commonly used ConnectionFactory property.
 
           </xsd:documentation>
@@ -1479,7 +1477,7 @@
     <xsd:annotation>
       <xsd:documentation>
 
-        Configuration of a Jakarta Messaging Destination.
+        Configuration of a Messaging Destination.
 
       </xsd:documentation>
     </xsd:annotation>
@@ -1490,7 +1488,7 @@
         <xsd:annotation>
           <xsd:documentation>
 
-            Description of this Jakarta Messaging Destination.
+            Description of this Messaging Destination.
 
           </xsd:documentation>
         </xsd:annotation>
@@ -1501,7 +1499,7 @@
           <xsd:documentation>
 
             The name element specifies the JNDI name of the
-            Jakarta Messaging destination being defined.
+            messaging destination being defined.
 
           </xsd:documentation>
         </xsd:annotation>
@@ -1511,7 +1509,7 @@
         <xsd:annotation>
           <xsd:documentation>
 
-              Fully-qualified name of the Jakarta Messaging destination interface.
+              Fully-qualified name of the messaging destination interface.
               Permitted values are jakarta.jms.Queue and jakarta.jms.Topic
 
           </xsd:documentation>
@@ -1523,7 +1521,7 @@
         <xsd:annotation>
           <xsd:documentation>
 
-              Fully-qualified name of the Jakarta Messaging destination implementation
+              Fully-qualified name of the messaging destination implementation
               class.  Ignored if a resource adapter is used unless the
               resource adapter defines more than one destination implementation
               class for the specified interface.
@@ -1562,7 +1560,7 @@
         <xsd:annotation>
           <xsd:documentation>
 
-            Jakarta Messaging Destination property.  This may be a vendor-specific
+            Messaging Destination property.  This may be a vendor-specific
             property or a less commonly used Destination property.
 
           </xsd:documentation>

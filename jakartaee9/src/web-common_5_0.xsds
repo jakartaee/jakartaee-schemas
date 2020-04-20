@@ -35,7 +35,7 @@
     <xsd:documentation>
       <![CDATA[
 
-        This is the common XML Schema for the Jakarta Servlet 5.0 deployment descriptor.
+        This is the common XML Schema for the Servlet 5.0 deployment descriptor.
         This file is in turn used by web.xml and web-fragment.xml
         web application's war file.  All Servlet deployment descriptors
         must indicate the web common schema by using the Jakarta EE
