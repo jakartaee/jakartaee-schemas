@@ -28,7 +28,7 @@
   <display-name>HandlerInfoTestClnt_client</display-name>
   <service-ref>
     <service-ref-name>service/handlerinfohandler</service-ref-name>
-    <service-interface>javax.xml.rpc.Service</service-interface>
+    <service-interface>jakarta.xml.rpc.Service</service-interface>
     <wsdl-file>META-INF/wsdl/HelloService.wsdl</wsdl-file>
     <jaxrpc-mapping-file>HelloService.xml</jaxrpc-mapping-file>
     <port-component-ref>

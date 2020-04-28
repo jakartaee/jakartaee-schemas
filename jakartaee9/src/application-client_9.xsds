@@ -83,9 +83,9 @@
 
 	The application-client element is the root element of an
 	application client deployment descriptor.  The application
-	client deployment descriptor describes the EJB components
-	and external resources referenced by the application
-	client.
+	client deployment descriptor describes the enterprise bean 
+	components and external resources referenced by the 
+	application client.
 
       </xsd:documentation>
     </xsd:annotation>
@@ -109,9 +109,9 @@
       <xsd:annotation>
 	<xsd:documentation>
 
-	  The ejb-ref-name element contains the name of an EJB
-	  reference. The EJB reference is an entry in the application
-	  client's environment and is relative to the
+	  The ejb-ref-name element contains the name of an enterprise bean 
+	  reference. The enterprise bean reference is an entry 
+	  in the application client's environment and is relative to the
 	  java:comp/env context. The name must be unique within the
 	  application client.
 
@@ -213,7 +213,7 @@
 	    The callback-handler element names a class provided by
 	    the application.  The class must have a no args
 	    constructor and must implement the
-	    javax.security.auth.callback.CallbackHandler
+	    jakarta.security.auth.callback.CallbackHandler
 	    interface.  The class will be instantiated by the
 	    application client container and used by the container
 	    to collect authentication information from the user.

@@ -87,12 +87,12 @@
   </resource-ref>
   <resource-env-ref>
     <resource-env-ref-name>whatever/POPD</resource-env-ref-name>
-    <resource-env-ref-type>javax.jms.Queue</resource-env-ref-type>
+    <resource-env-ref-type>jakarta.jms.Queue</resource-env-ref-type>
     <mapped-name>POPD</mapped-name>
   </resource-env-ref>
   <message-destination-ref>
     <message-destination-ref-name>jms/Stocks</message-destination-ref-name>
-    <message-destination-type>javax.jms.Queue</message-destination-type>
+    <message-destination-type>jakarta.jms.Queue</message-destination-type>
     <message-destination-usage>Produces</message-destination-usage>
     <mapped-name>StockJMS</mapped-name>
   </message-destination-ref>
@@ -145,7 +145,7 @@
   <jms-connection-factory>
      <description>A partial JMSConnectionFactory definition</description>
      <name>java:app/MyApp/myJMSCF</name>
-     <interface-name>javax.jms.QueueConnectionFactory</interface-name>
+     <interface-name>jakarta.jms.QueueConnectionFactory</interface-name>
      <transactional>true</transactional>
      <max-pool-size>5</max-pool-size>
    </jms-connection-factory>
@@ -156,7 +156,7 @@
    <jms-destination>
       <description>JMS Queue definition</description>
       <name>java:app/MyApp/myJMSQ</name>
-      <interface-name>javax.jms.Queue</interface-name>
+      <interface-name>jakarta.jms.Queue</interface-name>
       <class-name>com.example.myQueueImpl</class-name>
       <resource-adapter>MYRA</resource-adapter>
       <destination-name>Queue10</destination-name>

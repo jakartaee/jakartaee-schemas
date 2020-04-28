@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
 
-    Copyright (c) 2018 Oracle and/or its affiliates. All rights reserved.
+    Copyright (c) 2018, 2020 Oracle and/or its affiliates. All rights reserved.
 
     This program and the accompanying materials are made available under the
     terms of the Eclipse Public License v. 2.0, which is available at
@@ -21,7 +21,7 @@
             attributeFormDefault="unqualified" 
             elementFormDefault="qualified" 
             targetNamespace="https://jakarta.ee/xml/ns/jakartaee" 
-            version="2.3" 
+            version="3.0" 
             xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <xsd:include schemaLocation="jakartaee_9.xsd" />
 
@@ -35,8 +35,8 @@
     <xsd:documentation>
       <![CDATA[
 
-      <p>The XML Schema for the JavaServer Faces Application
-      Configuration File (Version 2.3).</p>
+      <p>The XML Schema for the Jakarta Server Faces Application
+      Configuration File (Version 3.0).</p>
       
       <p>All JavaServer Faces configuration files must indicate
       the JavaServer Faces schema by indicating the JavaServer
@@ -58,7 +58,7 @@
       version of the schema using xsi:schemaLocation attribute
       for jakartaee namespace with the following location:</p>
       
-      <p>https://jakarta.ee/xml/ns/jakartaee/web-facesconfig_2_3.xsd</p>
+      <p>https://jakarta.ee/xml/ns/jakartaee/web-facesconfig_3_0.xsd</p>
       
       ]]>
     </xsd:documentation>
@@ -229,7 +229,7 @@
           configuration resource file located at "WEB-INF/faces-config.xml".
           The presence of this attribute on any application configuration
           resource other than the one located at "WEB-INF/faces-config.xml",
-          including any files named using the javax.faces.CONFIG_FILES
+          including any files named using the jakarta.faces.CONFIG_FILES
           attribute, must be ignored.
           
           If metadata-complete is set to "true", the JavaServer Faces
@@ -392,7 +392,8 @@
         various per-application-singleton implementation artifacts for
         a particular web application that is utilizing
         JavaServer Faces.  For nested elements that are not specified,
-        the JSF implementation must provide a suitable default.</p>
+        the Jakarta Server Faces implementation must provide a suitable 
+        default.</p>
         
       ]]></xsd:documentation>
     </xsd:annotation>
@@ -448,8 +449,8 @@
             NavigationHandler implementation class that will
             be called during the Invoke Application phase
             of the request processing lifecycle, if the
-            default ActionListener (provided by the JSF
-            implementation) is used.</p>
+            default ActionListener (provided by the Jakarta Server 
+            Faces implementation) is used.</p>
             
           ]]></xsd:documentation>
         </xsd:annotation>
@@ -493,7 +494,7 @@
 
            <p> The "el-resolver" element contains the fully
             qualified class name of the concrete
-            javax.el.ELResolver implementation class
+            jakarta.el.ELResolver implementation class
             that will be used during the processing of
             EL expressions.</p>
             
@@ -566,7 +567,7 @@
 
            <p class="changed_added_2_3">The "search-expression-handler"
            element contains the fully qualified class name of the
-           concrete javax.faces.component.search.SearchExpressionHandler
+           concrete jakarta.faces.component.search.SearchExpressionHandler
            implementation class that will be used for processing of a
            search expression.</p>
             
@@ -580,7 +581,7 @@
 
            <p class="changed_added_2_3"> The "search-keyword-resolver"
            element contains the fully qualified class name of the
-           concrete javax.faces.component.search.SearchKeywordResolver
+           concrete jakarta.faces.component.search.SearchKeywordResolver
            implementation class that will be used during the processing
            of a search expression keyword.</p>
             
@@ -766,8 +767,8 @@
        <p> The "factory" element provides a mechanism to define the
         various Factories that comprise parts of the implementation
         of JavaServer Faces.  For nested elements that are not
-        specified, the JSF implementation must provide a suitable
-        default.</p>
+        specified, the Jakarta Server Faces implementation must provide a 
+        suitable default.</p>
         
       ]]></xsd:documentation>
     </xsd:annotation>
@@ -2918,8 +2919,8 @@ which must contain exactly one <code>&lt;flow-id&gt;</code> element.</p>
       <xsd:documentation><![CDATA[
 
        <p class="changed_added_2_2">Any view that matches any of the
-       url-patterns in this element may only be reached from another JSF
-       view in the same web application. Because the runtime is aware of
+       url-patterns in this element may only be reached from another Jakarta Server 
+       Faces view in the same web application. Because the runtime is aware of
        which views are protected, any navigation from an unprotected
        view to a protected view is automatically subject to
        protection.</p>
@@ -3746,7 +3747,7 @@ which must contain exactly one <code>&lt;flow-id&gt;</code> element.</p>
       ]]></xsd:documentation>
     </xsd:annotation>
     <xsd:restriction base="xsd:token">
-      <xsd:enumeration value="2.3"/>
+      <xsd:enumeration value="3.0"/>
     </xsd:restriction>
   </xsd:simpleType>
 

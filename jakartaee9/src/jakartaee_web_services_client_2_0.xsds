@@ -23,7 +23,7 @@
 	    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 	    elementFormDefault="qualified"
 	    attributeFormDefault="unqualified"
-	    version="1.4">
+	    version="2.0">
 
   <xsd:annotation>
     <xsd:documentation>
@@ -47,7 +47,7 @@
 	service. It contains optional description, display name and
 	icons, a declaration of the required Service interface,
 	an optional WSDL document location, an optional set
-	of JAX-RPC mappings, an optional QName for the service element,
+	of Jakarta XML RPC mappings, an optional QName for the service element,
 	an optional set of Service Endpoint Interfaces to be resolved 
 	by the container to a WSDL port, and an optional set of handlers.
 
@@ -76,9 +76,9 @@
 	  <xsd:documentation>
 
 	    The service-interface element declares the fully qualified class
-	    name of the JAX-RPC Service interface the client depends on. 
-	    In most cases the value will be javax.xml.rpc.Service.  A JAX-RPC
-	    generated Service Interface class may also be specified.
+	    name of the Jakarta XML RPC Service interface the client depends on. 
+	    In most cases the value will be jakarta.xml.rpc.Service.  A Jakarta XML 
+      RPC generated Service Interface class may also be specified.
 
 	  </xsd:documentation>
 	</xsd:annotation>
@@ -94,9 +94,9 @@
 	    element that is injected or returned when a JNDI lookup is done.
 	    This must be either a fully qualified name of Service class or 
 	    the fully qualified name of service endpoint interface class. 
-	    This is only used with JAX-WS runtime where the corresponding 
-	    @WebServiceRef annotation can be used to denote both a Service
-	    or a Port.
+	    This is only used with Jakarta XML Web Services runtime where
+      the corresponding @WebServiceRef annotation can be used to denote both 
+      a Service or a Port.
 
 	    If this is not specified, then the type of service-ref element 
 	    that is injected or returned when a JNDI lookup is done is 
@@ -126,11 +126,12 @@
 	  <xsd:documentation>
 
 	    The jaxrpc-mapping-file element contains the name of a file that
-	    describes the JAX-RPC mapping between the Java interaces used by
+	    describes the Jakarta XML RPC mapping between the Java interaces used by
 	    the application and the WSDL description in the wsdl-file.  The 
 	    file name is a relative path within the module file.
 
-	    This is not required when JAX-WS based runtime is used.
+	    This is not required when Jakarta Enterprise Web Services based 
+      runtime is used.
 
 	  </xsd:documentation>
 	</xsd:annotation>
@@ -179,7 +180,7 @@
 		handler is assumed to be associated with all ports of the
 		service.
 
-		To be used with JAX-RPC based runtime only.
+		To be used with Jakarta XML RPC based runtime only.
 
 	      </xsd:documentation>
 	    </xsd:annotation>
@@ -189,7 +190,7 @@
 		       minOccurs="0" maxOccurs="1">
 	    <xsd:annotation>
 	      <xsd:documentation>
-		 To be used with JAX-WS based runtime only.
+		 To be used with Jakarta XML Web Services based runtime only.
 	      </xsd:documentation>
 	    </xsd:annotation>
 	  </xsd:element>
@@ -235,9 +236,9 @@
           <xsd:documentation>
 
             Used to enable or disable SOAP MTOM/XOP mechanism on the client
-	    side for a port-component. 
+	          side for a port-component. 
 
-	    Not to be specified for JAX-RPC runtime
+	          Not to be specified for Jakarta XML RPC runtime
           </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
@@ -251,7 +252,7 @@
             When MTOM is enabled, binary data above this size in bytes
             should be XOP encoded or sent as attachment. Default value is 0.
 
-            Not to be specified for JAX-RPC runtime
+            Not to be specified for Jakarta XML RPC runtime
           </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
@@ -262,13 +263,13 @@
         <xsd:annotation>
           <xsd:documentation>
 
-            This specifies the WS-Addressing requirements for a JAX-WS
-            web service. It corresponds to javax.xml.ws.soap.Addressing
-            annotation or its feature javax.xml.ws.soap.AddressingFeature.
+            This specifies the WS-Addressing requirements for a Jakarta XML 
+            web service. It corresponds to jakarta.xml.ws.soap.Addressing
+            annotation or its feature jakarta.xml.ws.soap.AddressingFeature.
 
             See the addressingType for more information.
 
-            Not to be specified for JAX-RPC runtime
+            Not to be specified for Jakarta XML RPC runtime
           </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
@@ -279,13 +280,13 @@
         <xsd:annotation>
           <xsd:documentation>
 
-            Corresponds to the javax.xml.ws.RespectBinding annotation
-            or its corresponding javax.xml.ws.RespectBindingFeature web
-            service feature. This is used to control whether a JAX-WS
-            implementation must respect/honor the contents of the
+            Corresponds to the jakarta.xml.ws.RespectBinding annotation
+            or its corresponding jakarta.xml.ws.RespectBindingFeature web
+            service feature. This is used to control whether a Jakarta XML Web 
+            Services implementation must respect/honor the contents of the
             wsdl:binding in the WSDL that is associated with the service.
 
-            Not to be specified for JAX-RPC runtime
+            Not to be specified for Jakarta XML RPC runtime
           </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
@@ -501,9 +502,9 @@
     <xsd:annotation>
       <xsd:documentation>
 
-        This specifies the WS-Addressing requirements for a JAX-WS web service.
-        It corresponds to javax.xml.ws.soap.Addressing annotation or its
-        feature javax.xml.ws.soap.AddressingFeature.
+        This specifies the WS-Addressing requirements for a Jakarta XML web 
+        service. It corresponds to jakarta.xml.ws.soap.Addressing annotation or its
+        feature jakarta.xml.ws.soap.AddressingFeature.
 
         If the "enabled" element is "true", WS-Addressing is enabled.
         It means that the endpoint supports WS-Addressing but does not require
@@ -563,10 +564,10 @@
     <xsd:annotation>
       <xsd:documentation>
 
-        Corresponds to the javax.xml.ws.RespectBinding annotation
-        or its corresponding javax.xml.ws.RespectBindingFeature web
-        service feature. This is used to control whether a JAX-WS
-        implementation must respect/honor the contents of the
+        Corresponds to the jakarta.xml.ws.RespectBinding annotation
+        or its corresponding jakarta.xml.ws.RespectBindingFeature web
+        service feature. This is used to control whether a Jakarta XML 
+        Web Services implementation must respect/honor the contents of the
         wsdl:binding in the WSDL that is associated with the service.
 
         If the "enabled" element is "true", wsdl:binding in the
@@ -624,7 +625,7 @@
 	<xsd:annotation>
 	  <xsd:documentation>
 
-	    Not to be specified for JAX-WS runtime
+	    Not to be specified for Jakarta XML Web Services runtime
 
 	  </xsd:documentation>
 	</xsd:annotation>
@@ -639,7 +640,7 @@
 	    Defines the QName of a SOAP header that will be processed by the
 	    handler.
 
-	    Not to be specified for JAX-WS runtime
+	    Not to be specified for Jakarta XML Web Services runtime
 
 	  </xsd:documentation>
 	</xsd:annotation>
@@ -667,7 +668,7 @@
             specified, the handler is assumed to be associated with
             all ports of the service.
 
-	    Not to be specified for JAX-WS runtime
+	    Not to be specified for Jakarta XML Web Services runtime
 
 	  </xsd:documentation>
 	</xsd:annotation>

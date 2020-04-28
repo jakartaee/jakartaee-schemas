@@ -23,7 +23,7 @@
 	    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 	    elementFormDefault="qualified"
 	    attributeFormDefault="unqualified"
-	    version="1.7">
+	    version="2.0">
 
   <xsd:annotation>
     <xsd:documentation>
@@ -35,9 +35,9 @@
     <xsd:documentation>
       <![CDATA[
 
-	This is the XML Schema for the Connector 1.7 deployment
+	This is the XML Schema for the Connectors 2.0 deployment
 	descriptor.  The deployment descriptor must be named
-	"META-INF/ra.xml" in the connector's rar file.  All Connector
+	"META-INF/ra.xml" in the connector's rar file.  All connector
 	deployment descriptors must indicate the connector resource
 	adapter schema by using the Jakarta EE namespace:
 
@@ -49,8 +49,8 @@
 	    <connector xmlns="https://jakarta.ee/xml/ns/jakartaee"
 	      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	      xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
-		 https://jakarta.ee/xml/ns/jakartaee/connector_1_7.xsd"
-	      version="1.7">
+		 https://jakarta.ee/xml/ns/jakartaee/connector_2_0.xsd"
+	      version="2.0">
 	      ...
 	    </connector>
 
@@ -58,7 +58,7 @@
 	the schema using the xsi:schemaLocation attribute for Jakarta EE
 	namespace with the following location:
 
-	https://jakarta.ee/xml/ns/jakartaee/connector_1_7.xsd
+	https://jakarta.ee/xml/ns/jakartaee/connector_2_0.xsd
 
 	]]>
     </xsd:documentation>
@@ -119,7 +119,7 @@
 	      The element activationspec-class specifies the fully
 	      qualified Java class name of the activation
 	      specification class. This class must implement the
-	      javax.resource.spi.ActivationSpec interface. The
+	      jakarta.resource.spi.ActivationSpec interface. The
 	      implementation of this class is required to be a
 	      JavaBean.
 
@@ -144,7 +144,7 @@
 	Bean Validation annotation or its XML validation
 	descriptor equivalent to indicate that a configuration
 	property is required to be specified by the deployer.
-	See the Connectors specification for more information. 
+	See the Jakarta Connectors specification for more information. 
 
       </xsd:documentation>
     </xsd:annotation>
@@ -187,7 +187,7 @@
 	      interface implemented by an administered object.
 
 	      Example:
-		<adminobject-interface>javax.jms.Destination
+		<adminobject-interface>jakarta.jms.Destination
 		</adminobject-interface>
 
 	      ]]>
@@ -235,10 +235,10 @@
 	security contract and authentication mechanism.
 
 	Note that BasicPassword mechanism type should support the
-	javax.resource.spi.security.PasswordCredential interface.
+	jakarta.resource.spi.security.PasswordCredential interface.
 	The Kerbv5 mechanism type should support the
 	org.ietf.jgss.GSSCredential interface or the deprecated
-	javax.resource.spi.security.GenericCredential interface.
+	jakarta.resource.spi.security.GenericCredential interface.
 
       </xsd:documentation>
     </xsd:annotation>
@@ -266,7 +266,7 @@
 	      </authentication-mechanism-type>
 
 	      Any additional security mechanisms are outside the
-	      scope of the Connector architecture specification.
+	      scope of the Jakarta Connectors architecture specification.
 
 	      ]]>
 	  </xsd:documentation>
@@ -416,7 +416,7 @@
 	      The element config-property-ignore is used to specify 
 	      whether the configuration tools must ignore considering the 
 	      configuration property during auto-discovery of
-	      Configuration properties. See the Connector specification for
+	      Configuration properties. See the Jakarta Connectors specification for
 	      more details. If unspecified, the container must not ignore
 	      the configuration property during auto-discovery.
 	      This element must be one of the following, "true" or "false".
@@ -435,7 +435,7 @@
 	      The element config-property-supports-dynamic-updates is used to specify 
 	      whether the configuration property allows its value to be updated, by
 	      application server's configuration tools, during the lifetime of
-	      the JavaBean instance. See the Connector specification for
+	      the JavaBean instance. See the Jakarta Connectors specification for
 	      more details. If unspecified, the container must not dynamically
 	      reconfigure the property.
 	      This element must be one of the following, "true" or "false".
@@ -454,7 +454,7 @@
 	      The element config-property-confidential is used to specify 
 	      whether the configuration property is confidential and
 	      recommends application server's configuration tools to use special 
-	      visual aids for editing them. See the Connector specification for
+	      visual aids for editing them. See the Jakarta Connectors specification for
 	      more details. If unspecified, the container must not treat the
 	      property as confidential.
 	      This element must be one of the following, "true" or "false".
@@ -494,7 +494,7 @@
 	      The element managedconnectionfactory-class specifies
 	      the fully qualified name of the Java class that
 	      implements the
-	      javax.resource.spi.ManagedConnectionFactory interface.
+	      jakarta.resource.spi.ManagedConnectionFactory interface.
 	      This Java class is provided as part of resource
 	      adapter's implementation of connector architecture
 	      specified contracts. The implementation of this
@@ -529,7 +529,7 @@
 
 	      OR
 
-	      <connectionfactory-interface>javax.resource.cci.ConnectionFactory
+	      <connectionfactory-interface>jakarta.resource.cci.ConnectionFactory
 	      </connectionfactory-interface>
 
 	      ]]>
@@ -569,7 +569,7 @@
 
 	      Example:
 
-		  <connection-interface>javax.resource.cci.Connection
+		  <connection-interface>jakarta.resource.cci.Connection
 		  </connection-interface>
 
 	      ]]>
@@ -705,7 +705,7 @@
     
     <xsd:attribute name="version"
 		   type="jakartaee:dewey-versionType"
-		   fixed="1.7"
+		   fixed="2.0"
 		   use="required">
       <xsd:annotation>
 	<xsd:documentation>
@@ -764,20 +764,20 @@
 
 	The possible values are:
 
-	javax.resource.spi.security.PasswordCredential
+	jakarta.resource.spi.security.PasswordCredential
 	org.ietf.jgss.GSSCredential
-	javax.resource.spi.security.GenericCredential
+	jakarta.resource.spi.security.GenericCredential
 
       </xsd:documentation>
     </xsd:annotation>
     <xsd:simpleContent>
       <xsd:restriction base="jakartaee:fully-qualified-classType">
 	<xsd:enumeration
-	     value="javax.resource.spi.security.PasswordCredential"/>
+	     value="jakarta.resource.spi.security.PasswordCredential"/>
 	<xsd:enumeration
 	     value="org.ietf.jgss.GSSCredential"/>
 	<xsd:enumeration
-	     value="javax.resource.spi.security.GenericCredential"/>
+	     value="jakarta.resource.spi.security.GenericCredential"/>
       </xsd:restriction>
     </xsd:simpleContent>
   </xsd:complexType>
@@ -907,7 +907,7 @@
 
 	      Example:
 
-		<messagelistener-type>javax.jms.MessageListener
+		<messagelistener-type>jakarta.jms.MessageListener
 		</messagelistener-type>
 
 	      ]]>
@@ -950,7 +950,7 @@
 	If there is no transaction-support specified as part of this element 
     or metadata annotation, then the application server must consider that 
     the resource adapter does not support either the resource manager local 
-    or JTA transactions and must consider the transaction support as 
+    or Jakarta Transactions transactions and must consider the transaction support as 
     NoTransaction. Note that resource adapters may specify the level of 
     transaction support to be used at runtime for a ManagedConnectionFactory 
     through the TransactionSupport interface.
@@ -1056,7 +1056,7 @@
 
 	    The element resourceadapter-class specifies the
 	    fully qualified name of a Java class that implements
-	    the javax.resource.spi.ResourceAdapter
+	    the jakarta.resource.spi.ResourceAdapter
 	    interface. This Java class is provided as part of
 	    resource adapter's implementation of connector
 	    architecture specified contracts. The implementation

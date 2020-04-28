@@ -20,8 +20,8 @@
 <web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
  xmlns:foobar="http://foobar.com"
- xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee web-app_4_0.xsd http://foobar.com http://foobar.com/foobar.xsd"
- version="4.0">
+ xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee web-app_5_0.xsd http://foobar.com http://foobar.com/foobar.xsd"
+ version="5.0">
   <servlet>
     <servlet-name>MyInventoryServlet</servlet-name>
     <servlet-class>com.acme.Inventory</servlet-class>
@@ -210,7 +210,7 @@
   <jms-connection-factory>
      <description>A partial JMSConnectionFactory definition</description>
      <name>java:app/MyApp/myJMSCF</name>
-     <interface-name>javax.jms.QueueConnectionFactory</interface-name>
+     <interface-name>jakarta.jms.QueueConnectionFactory</interface-name>
      <class-name>com.example.QueueConnectionFactoryImpl</class-name>
      <transactional>true</transactional>
      <max-pool-size>5</max-pool-size>
@@ -222,7 +222,7 @@
    <jms-destination>
       <description>JMS Queue definition</description>
       <name>java:app/MyApp/myJMSQ</name>
-      <interface-name>javax.jms.Queue</interface-name>
+      <interface-name>jakarta.jms.Queue</interface-name>
       <class-name>com.example.QueueImpl</class-name>
       <resource-adapter>MYRA</resource-adapter>
       <destination-name>Queue10</destination-name>
@@ -269,4 +269,4 @@
      </property>
    </connection-factory>
 </web-app>
-<?validateAgainst web-app_4_0.xsd ?>
+<?validateAgainst web-app_5_0.xsd ?>

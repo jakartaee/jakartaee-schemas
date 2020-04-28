@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright (c) 2018 Oracle and/or its affiliates. All rights reserved.
+    Copyright (c) 2018, 2020 Oracle and/or its affiliates. All rights reserved.
 
     This program and the accompanying materials are made available under the
     terms of the Eclipse Public License v. 2.0, which is available at
@@ -23,7 +23,7 @@
             xmlns:xml="http://www.w3.org/XML/1998/namespace"
             elementFormDefault="qualified"
             attributeFormDefault="unqualified"
-            version="2.3">
+            version="3.0">
   <xsd:include schemaLocation="jakartaee_9.xsd"/>
 
   <xsd:annotation>
@@ -35,17 +35,17 @@
   <xsd:annotation>
     <xsd:documentation>
       <![CDATA[[
-      <p>The XML Schema for the Tag Libraries in the JavaServer Faces
+      <p>The XML Schema for the Tag Libraries in the Jakarta Server Faces
       Standard Facelets View Declaration Language (Facelets VDL)
-      (Version 2.3).</p>
+      (Version 3.0).</p>
       
-      <p>JSF 2.3 Facelet Tag Libraries that wish to conform to this
-      schema must declare it in the following manner.</p>
+      <p>Jakarta Server Faces 3.0 Facelet Tag Libraries that wish to conform to 
+      this schema must declare it in the following manner.</p>
       
       &lt;facelet-taglib xmlns="https://jakarta.ee/xml/ns/jakartaee"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-facelettaglibary_2_3.xsd"
-      version="2.3"&gt;
+      version="3.0"&gt;
       
       ...
       
@@ -403,7 +403,7 @@
       <xsd:documentation><![CDATA[<p>
 
         Within a tag element, the behavior element encapsulates
-        information specific to a JSF Behavior.
+        information specific to a Faces Behavior.
         
       </p>]]></xsd:documentation>
     </xsd:annotation>
@@ -455,12 +455,11 @@
 
       <p><span class="changed_modified_2_2
       changed_modified_2_3">Within</span> a tag element, the component
-      element encapsulates information specific to a JSF
-      UIComponent.</p>
+      element encapsulates information specific to a Faces UIComponent.</p>
 
 <div class="changed_added_2_2 changed_deleted_2_3">
 
-<p>As of 2.3 of the specification, this requirement is no longer
+<p>As of 3.0 of the specification, this requirement is no longer
 present: This element must have exactly one of
 <code>&lt;component-type&gt;</code>, <code>&lt;resource-id&gt;</code>,
 or <code>&lt;handler-class&gt;</code> among its child elements.</p>
@@ -539,7 +538,7 @@ or <code>&lt;handler-class&gt;</code> among its child elements.</p>
       <xsd:documentation><![CDATA[<p>
 
         Within a tag element, the converter element encapsulates
-        information specific to a JSF Converter.
+        information specific to a Faces Converter.
         
       </p>]]></xsd:documentation>
     </xsd:annotation>
@@ -590,7 +589,7 @@ or <code>&lt;handler-class&gt;</code> among its child elements.</p>
       <xsd:documentation><![CDATA[<p>
 
         Within a tag element, the validator element encapsulates
-        information specific to a JSF Validator.
+        information specific to a Faces Validator.
         
       </p>]]></xsd:documentation>
     </xsd:annotation>
@@ -643,7 +642,7 @@ or <code>&lt;handler-class&gt;</code> among its child elements.</p>
       </p>]]></xsd:documentation>
     </xsd:annotation>
     <xsd:restriction base="xsd:token">
-      <xsd:enumeration value="2.3"/>
+      <xsd:enumeration value="3.0"/>
     </xsd:restriction>
   </xsd:simpleType>
 

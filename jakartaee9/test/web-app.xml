@@ -20,8 +20,8 @@
 <web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
  xmlns:foobar="http://foobar.com"
- xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee web-app_4_0.xsd http://foobar.com http://foobar.com/foobar.xsd"
- version="4.0">
+ xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee web-app_5_0.xsd http://foobar.com http://foobar.com/foobar.xsd"
+ version="5.0">
   <default-context-path>/myapp</default-context-path>
   <request-character-encoding>UTF-8</request-character-encoding>
   <response-character-encoding>UTF-8</response-character-encoding>
@@ -165,4 +165,4 @@
     </handler>
   </service-ref>
 </web-app>
-<?validateAgainst web-app_4_0.xsd ?>
+<?validateAgainst web-app_5_0.xsd ?>

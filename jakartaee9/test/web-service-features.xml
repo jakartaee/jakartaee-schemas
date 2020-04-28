@@ -20,8 +20,8 @@
 <webservices xmlns="https://jakarta.ee/xml/ns/jakartaee"
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee 
-               jakartaee_web_services_1_4.xsd"
-             version="1.4">
+               jakartaee_web_services_2_0.xsd"
+             version="2.0">
   <webservice-description>
     <webservice-description-name>JoesServices</webservice-description-name>
     <wsdl-file>META-INF/joe.wsdl</wsdl-file>
@@ -44,4 +44,4 @@
     </port-component>
   </webservice-description>
 </webservices>
-<?validateAgainst jakartaee_web_services_1_4.xsd?>
+<?validateAgainst jakartaee_web_services_2_0.xsd?>

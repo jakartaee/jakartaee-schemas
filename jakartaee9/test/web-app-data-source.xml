@@ -20,8 +20,8 @@
 <web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
  xmlns:foobar="http://foobar.com"
- xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee web-app_4_0.xsd http://foobar.com http://foobar.com/foobar.xsd"
- version="4.0">
+ xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee web-app_5_0.xsd http://foobar.com http://foobar.com/foobar.xsd"
+ version="5.0">
   <servlet>
     <servlet-name>MyInventoryServlet</servlet-name>
     <servlet-class>com.acme.Inventory</servlet-class>
@@ -208,4 +208,4 @@
     <max-statements>50</max-statements>
   </data-source>
 </web-app>
-<?validateAgainst web-app_4_0.xsd ?>
+<?validateAgainst web-app_5_0.xsd ?>
