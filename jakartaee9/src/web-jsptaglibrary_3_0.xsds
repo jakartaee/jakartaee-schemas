@@ -689,7 +689,7 @@
     </xsd:sequence>
     <xsd:attribute name="version"
 		   type="jakartaee:dewey-versionType"
-		   fixed="2.1"
+		   fixed="3.0"
 		   use="required">
       <xsd:annotation>
 	<xsd:documentation>
