@@ -18,8 +18,8 @@
 -->
 
 <xsd:schema
-     targetNamespace="http://xmlns.eclipse.org/xml/ns/jakartaee"
-     xmlns:jakartaee="http://xmlns.eclipse.org/xml/ns/jakartaee"
+     targetNamespace="https://jakarta.ee/xml/ns/jakartaee"
+     xmlns:jakartaee="https://jakarta.ee/xml/ns/jakartaee"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema"
      elementFormDefault="qualified"
      attributeFormDefault="unqualified"
@@ -40,12 +40,12 @@
 	indicate the tag library schema by using the Taglibrary 
 	namespace: 
 
-	http://xmlns.eclipse.org/xml/ns/jakartaee 
+	https://jakarta.ee/xml/ns/jakartaee 
 
 	and by indicating the version of the schema by 
 	using the version element as shown below: 
 
-	    <taglib xmlns="http://xmlns.eclipse.org/xml/ns/jakartaee"
+	    <taglib xmlns="https://jakarta.ee/xml/ns/jakartaee"
 	      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	      xsi:schemaLocation="..."
 	      version="3.0">
@@ -56,7 +56,7 @@
 	version of the schema using xsi:schemaLocation attribute 
 	for Jakarta EE namespace with the following location: 
 
-	http://xmlns.eclipse.org/xml/ns/jakartaee/web-jsptaglibrary_3_0.xsd
+	https://jakarta.ee/xml/ns/jakartaee/web-jsptaglibrary_3_0.xsd
 
 	]]>
     </xsd:documentation>
