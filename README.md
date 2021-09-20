@@ -4,4 +4,4 @@
 
 ## XML Schemas
 
-See [XML Schemas](xml/README)
+See [XML Schemas](xml/README.md)
