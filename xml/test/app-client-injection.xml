@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright (c) 2009, 2020 Oracle and/or its affiliates. All rights reserved.
+
+    This program and the accompanying materials are made available under the
+    terms of the Eclipse Public License v. 2.0, which is available at
+    http://www.eclipse.org/legal/epl-2.0.
+
+    This Source Code may also be made available under the following Secondary
+    Licenses when the conditions for such availability set forth in the
+    Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+    version 2 with the GNU Classpath Exception, which is available at
+    https://www.gnu.org/software/classpath/license.html.
+
+    SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+
+-->
+
+<application-client xmlns="https://jakarta.ee/xml/ns/jakartaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:xml="http://www.w3.org/XML/1998/namespace" 
+    xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee 
+      application-client_9.xsd"
+    version="9">
+  <description xml:lang="en">This is my app client</description>
+  <display-name>MyAppClient</display-name>
+  <env-entry>
+    <env-entry-name>accountId1</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+    <env-entry-value>Arun</env-entry-value>
+    <injection-target>
+      <injection-target-class>com.example.MyApp</injection-target-class>
+      <injection-target-name>accountId</injection-target-name>
+    </injection-target>
+  </env-entry>
+  <env-entry>
+    <env-entry-name>accountId2</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+    <env-entry-value>Jain</env-entry-value>
+    <injection-target>
+      <injection-target-class>com.example.MyApp</injection-target-class>
+      <injection-target-name>accountId2</injection-target-name>
+    </injection-target>
+    <injection-target>
+      <injection-target-class>com.example.MyUtil</injection-target-class>
+      <injection-target-name>accountId2</injection-target-name>
+    </injection-target>
+  </env-entry>
+  <env-entry>
+    <env-entry-name>balance1</env-entry-name>
+    <env-entry-type>java.lang.Double</env-entry-type>
+    <injection-target>
+      <injection-target-class>com.example.MyApp</injection-target-class>
+      <injection-target-name>balance</injection-target-name>
+    </injection-target>
+  </env-entry>
+  <env-entry>
+    <env-entry-name>balance2</env-entry-name>
+    <injection-target>
+      <injection-target-class>com.example.MyApp</injection-target-class>
+      <injection-target-name>balance2</injection-target-name>
+    </injection-target>
+  </env-entry>
+  <env-entry>
+    <env-entry-name>accountId3</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+    <env-entry-value>Jim</env-entry-value>
+    <injection-target>
+    </injection-target>
+  </env-entry>
+  <env-entry>
+    <env-entry-name>accountId4</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+    <env-entry-value>Driscoll</env-entry-value>
+    <injection-target>
+      <injection-target-name>id4</injection-target-name>
+    </injection-target>
+  </env-entry>
+  <env-entry>
+    <env-entry-name>balance3</env-entry-name>
+    <env-entry-type>java.lang.Double</env-entry-type>
+    <env-entry-value>1000.0</env-entry-value>
+    <injection-target>
+      <injection-target-class>com.example.MyApp</injection-target-class>
+    </injection-target>
+  </env-entry>
+  <env-entry>
+    <env-entry-name>balance4</env-entry-name>
+    <env-entry-type>java.lang.Double</env-entry-type>
+    <env-entry-value>2000.0</env-entry-value>
+    <injection-target>
+      <injection-target-class>com.example.MyApp</injection-target-class>
+      <injection-target-name>balance4</injection-target-name>
+      <injection-target-class>com.example.MyUtil</injection-target-class>
+    </injection-target>
+  </env-entry>
+  <env-entry>
+    <env-entry-name>balance5</env-entry-name>
+    <env-entry-type>java.lang.Double</env-entry-type>
+    <env-entry-value>1000.0</env-entry-value>
+    <injection-target>
+      <injection-target-class>com.example.MyApp</injection-target-class>
+      <injection-target-name>balance5</injection-target-name>
+      <injection-target-name>balance6</injection-target-name>
+    </injection-target>
+  </env-entry>
+  <env-entry>
+    <env-entry-name>balance6</env-entry-name>
+    <env-entry-type>java.lang.Double</env-entry-type>
+    <env-entry-value>2000.0</env-entry-value>
+    <injection-target>
+      <injection-target-name>balance6</injection-target-name>
+      <injection-target-class>com.example.MyApp</injection-target-class>
+    </injection-target>
+  </env-entry>
+  <env-entry>
+    <env-entry-name>balance7</env-entry-name>
+    <env-entry-type>java.lang.Double</env-entry-type>
+    <env-entry-value>3000.0</env-entry-value>
+  </env-entry>
+  <env-entry>
+    <env-entry-name>balance8</env-entry-name>
+    <env-entry-type>java.lang.Double</env-entry-type>
+    <env-entry-value>4000.0</env-entry-value>
+  </env-entry>
+  <env-entry>
+    <env-entry-name>user</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+    <env-entry-value>driscoll</env-entry-value>
+  </env-entry>
+  <env-entry>
+    <env-entry-name>password</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+    <env-entry-value>driscoll</env-entry-value>
+  </env-entry>
+  <ejb-ref>
+    <ejb-ref-name>MyEjbReference</ejb-ref-name>
+    <ejb-ref-type>Session</ejb-ref-type>
+    <home>appclient.AppclientHome</home>
+    <remote>appclient.Appclient</remote>
+    <ejb-link>AppclientBean</ejb-link>
+  </ejb-ref>
+  <service-ref>
+    <description>google service ref</description>
+    <service-ref-name>service/GoogleSearch</service-ref-name>
+    <service-interface>googleclient.GoogleSearchService</service-interface>
+    <wsdl-file>GoogleSearch.wsdl</wsdl-file>
+    <jaxrpc-mapping-file>googleclient.model</jaxrpc-mapping-file>
+    <handler>
+      <description>handler 1</description>
+      <handler-name>handler1</handler-name>
+      <handler-class>googleclient.ClientHandler</handler-class>
+      <init-param>
+        <description>param1 description</description>
+        <param-name>a</param-name>
+        <param-value>b</param-value>
+      </init-param>
+      <soap-header xmlns:goo="urn:GoogleSearch">goo:DirectoryCategory</soap-header>
+      <soap-role>Role1</soap-role>
+      <soap-role>Role2</soap-role>
+      <port-name>GoogleSearchPort</port-name>
+    </handler>
+  </service-ref>
+  <resource-ref>
+    <res-ref-name>MyDB</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Application</res-auth>
+    <res-sharing-scope>Shareable</res-sharing-scope>
+  </resource-ref>
+  <resource-env-ref>
+    <resource-env-ref-name>whatever/POPD</resource-env-ref-name>
+    <resource-env-ref-type>jakarta.jms.Queue</resource-env-ref-type>
+  </resource-env-ref>
+  <message-destination-ref>
+    <message-destination-ref-name>jms/Stocks</message-destination-ref-name>
+    <message-destination-type>jakarta.jms.Queue</message-destination-type>
+    <message-destination-usage>Produces</message-destination-usage>
+  </message-destination-ref>
+  <post-construct>
+    <lifecycle-callback-class>Main</lifecycle-callback-class>
+    <lifecycle-callback-method>ready</lifecycle-callback-method>
+  </post-construct>
+</application-client>
+<?validateAgainst application-client_9.xsd?>
+<?expectError 70:cvc-complex-type.2.4.b?>
+<?expectError 77:cvc-complex-type.2.4.a?>
+<?expectError 86:cvc-complex-type.2.4.b?>
+<?expectError 95:cvc-complex-type.2.4.d?>
+<?expectError 105:cvc-complex-type.2.4.d?>
+<?expectError 113:cvc-complex-type.2.4.a?>
