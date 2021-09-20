@@ -2,7 +2,7 @@
 
 This directory contains everything necessary to build and test the Jakarta EE deployment descriptors. 
 
-See doc/HOWTO for directions.
+See [doc/HOWTO](doc/HOWTO.md) for directions.
 
 The src directory contains the sources for schemas of the current version of Jakarta EE.
 The tests in the test directory have been updated accordingly.
