@@ -23,7 +23,7 @@
 	    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 	    elementFormDefault="qualified"
 	    attributeFormDefault="unqualified"
-	    version="3.0">
+	    version="3.1">
 
   <xsd:annotation>
     <xsd:documentation>
@@ -34,8 +34,8 @@
   <xsd:annotation>
     <xsd:documentation>
 
-      This is the XML Schema for the JSP 3.0 deployment descriptor
-      types.  The JSP 3.0 schema contains all the special
+      This is the XML Schema for the JSP 3.1 deployment descriptor
+      types.  The JSP 3.1 schema contains all the special
       structures and datatypes that are necessary to use JSP files
       from a web application. 
 
