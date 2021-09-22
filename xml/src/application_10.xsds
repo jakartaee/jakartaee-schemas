@@ -35,7 +35,7 @@
     <xsd:documentation>
       <![CDATA[
 
-	This is the XML Schema for the application 9 deployment
+	This is the XML Schema for the application 10 deployment
 	descriptor.  The deployment descriptor must be named
 	"META-INF/application.xml" in the application's ear file.
 	All application deployment descriptors must indicate
@@ -239,7 +239,7 @@
       <xsd:annotation>
 	<xsd:documentation>
 
-	  The required value for the version is 9.
+	  The required value for the version is 10.
 
 	</xsd:documentation>
       </xsd:annotation>
