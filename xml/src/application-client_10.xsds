@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright (c) 2009, 2020 Oracle and/or its affiliates. All rights reserved.
+    Copyright (c) 2009, 2021 Oracle and/or its affiliates. All rights reserved.
 
     This program and the accompanying materials are made available under the
     terms of the Eclipse Public License v. 2.0, which is available at
@@ -23,7 +23,7 @@
 	    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 	    elementFormDefault="qualified"
 	    attributeFormDefault="unqualified"
-	    version="9">
+	    version="10">
 
   <xsd:annotation>
     <xsd:documentation>
@@ -50,8 +50,8 @@
 	    <application-client xmlns="https://jakarta.ee/xml/ns/jakartaee"
 	      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	      xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee 
-		https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd"
-	      version="9">
+		https://jakarta.ee/xml/ns/jakartaee/application-client_10.xsd"
+	      version="10">
 	      ...
 	    </application-client>
 
@@ -247,7 +247,7 @@
 
     <xsd:attribute name="version"
 		   type="jakartaee:dewey-versionType"
-		   fixed="9"
+		   fixed="10"
 		   use="required">
       <xsd:annotation>
 	<xsd:documentation>

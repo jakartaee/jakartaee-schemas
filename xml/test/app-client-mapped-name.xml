@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright (c) 2009, 2020 Oracle and/or its affiliates. All rights reserved.
+    Copyright (c) 2009, 2021 Oracle and/or its affiliates. All rights reserved.
 
     This program and the accompanying materials are made available under the
     terms of the Eclipse Public License v. 2.0, which is available at
@@ -21,8 +21,8 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xmlns:xml="http://www.w3.org/XML/1998/namespace" 
     xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee 
-      application-client_9.xsd"
-    version="9">
+      application-client_10.xsd"
+    version="10">
   <description xml:lang="en">This is my app client</description>
   <display-name>MyAppClient</display-name>
   <env-entry>
@@ -97,4 +97,4 @@
     <mapped-name>StockJMS</mapped-name>
   </message-destination-ref>
 </application-client>
-<?validateAgainst application-client_9.xsd?>
+<?validateAgainst application-client_10.xsd?>
