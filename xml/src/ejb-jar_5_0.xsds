@@ -23,7 +23,7 @@
 	    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 	    elementFormDefault="qualified"
 	    attributeFormDefault="unqualified"
-	    version="4.0">
+	    version="5.0">
 
   <xsd:annotation>
     <xsd:documentation>
@@ -35,7 +35,7 @@
     <xsd:documentation>
       <![CDATA[
 
-	This is the XML Schema for the Enterprise Beans 4.0 deployment descriptor.
+	This is the XML Schema for the Enterprise Beans 5.0 deployment descriptor.
 
         All Enterprise Beans deployment descriptors must indicate
 	the schema by using the Jakarta EE namespace:
@@ -48,8 +48,8 @@
 	    <ejb-jar xmlns="https://jakarta.ee/xml/ns/jakartaee"
 	      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	      xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
-		  https://jakarta.ee/xml/ns/jakartaee/ejb-jar_4_0.xsd"
-	      version="4.0">
+		  https://jakarta.ee/xml/ns/jakartaee/ejb-jar_5_0.xsd"
+	      version="5.0">
 	      ...
 	    </ejb-jar>
 
@@ -57,7 +57,7 @@
 	the schema using the xsi:schemaLocation attribute for the
 	Jakarta EE namespace with the following location:
 
-	https://jakarta.ee/xml/ns/jakartaee/ejb-jar_4_0.xsd
+	https://jakarta.ee/xml/ns/jakartaee/ejb-jar_5_0.xsd
 
 	]]>
     </xsd:documentation>
@@ -809,7 +809,7 @@
     </xsd:sequence>
     <xsd:attribute name="version"
 		   type="jakartaee:dewey-versionType"
-		   fixed="4.0"
+		   fixed="5.0"
 		   use="required">
       <xsd:annotation>
 	<xsd:documentation>

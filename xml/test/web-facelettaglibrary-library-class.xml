@@ -20,9 +20,10 @@
 <facelet-taglib xmlns="https://jakarta.ee/xml/ns/jakartaee"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
  xmlns:foobar="http://mojarra.dev.java.net/mojarra_ext"
- xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee web-facelettaglibrary_3_0.xsd http://mojarra.dev.java.net/mojarra_ext http://mojarra.dev.java.net/mojarra_ext/mojarra_ext.xsd"
- version="3.0"
->
+ xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+  web-facelettaglibrary_4_0.xsd
+  http://mojarra.dev.java.net/mojarra_ext http://mojarra.dev.java.net/mojarra_ext/mojarra_ext.xsd"
+ version="4.0">
     <library-class>com.foo.MyLibrary</library-class>
 </facelet-taglib>
-<?validateAgainst web-facelettaglibrary_3_0.xsd ?>
+<?validateAgainst web-facelettaglibrary_4_0.xsd ?>

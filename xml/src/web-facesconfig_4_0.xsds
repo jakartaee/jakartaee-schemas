@@ -21,9 +21,10 @@
             attributeFormDefault="unqualified" 
             elementFormDefault="qualified" 
             targetNamespace="https://jakarta.ee/xml/ns/jakartaee" 
-            version="3.0" 
+            version="4.0" 
             xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <xsd:include schemaLocation="jakartaee_10.xsd" />
+
+  <xsd:include schemaLocation="jakartaee_10.xsd"/>
 
   <xsd:annotation>
     <xsd:documentation>
@@ -36,7 +37,7 @@
       <![CDATA[
 
       <p>The XML Schema for the Jakarta Server Faces Application
-      Configuration File (Version 3.0).</p>
+      Configuration File (Version 4.0).</p>
       
       <p>All JavaServer Faces configuration files must indicate
       the JavaServer Faces schema by indicating the JavaServer
@@ -50,7 +51,7 @@
       <pre>&lt;faces-config xmlns="https://jakarta.ee/xml/ns/jakartaee"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="..."
-      version="3.0"&gt;
+      version="4.0"&gt;
       ...
       &lt;/faces-config&gt;</pre>
       
@@ -58,7 +59,7 @@
       version of the schema using xsi:schemaLocation attribute
       for jakartaee namespace with the following location:</p>
       
-      <p>https://jakarta.ee/xml/ns/jakartaee/web-facesconfig_3_0.xsd</p>
+      <p>https://jakarta.ee/xml/ns/jakartaee/web-facesconfig_4_0.xsd</p>
       
       ]]>
     </xsd:documentation>
@@ -3747,7 +3748,7 @@ which must contain exactly one <code>&lt;flow-id&gt;</code> element.</p>
       ]]></xsd:documentation>
     </xsd:annotation>
     <xsd:restriction base="xsd:token">
-      <xsd:enumeration value="3.0"/>
+      <xsd:enumeration value="4.0"/>
     </xsd:restriction>
   </xsd:simpleType>
 

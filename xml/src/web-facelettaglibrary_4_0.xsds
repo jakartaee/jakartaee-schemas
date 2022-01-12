@@ -23,7 +23,8 @@
             xmlns:xml="http://www.w3.org/XML/1998/namespace"
             elementFormDefault="qualified"
             attributeFormDefault="unqualified"
-            version="3.0">
+            version="4.0">
+
   <xsd:include schemaLocation="jakartaee_10.xsd"/>
 
   <xsd:annotation>
@@ -37,15 +38,15 @@
       <![CDATA[[
       <p>The XML Schema for the Tag Libraries in the Jakarta Server Faces
       Standard Facelets View Declaration Language (Facelets VDL)
-      (Version 3.0).</p>
+      (Version 4.0).</p>
       
-      <p>Jakarta Server Faces 3.0 Facelet Tag Libraries that wish to conform to 
+      <p>Jakarta Server Faces 4.0 Facelet Tag Libraries that wish to conform to 
       this schema must declare it in the following manner.</p>
       
       &lt;facelet-taglib xmlns="https://jakarta.ee/xml/ns/jakartaee"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-facelettaglibary_3_0.xsd"
-      version="3.0"&gt;
+      version="4.0"&gt;
       
       ...
       
@@ -642,7 +643,7 @@ or <code>&lt;handler-class&gt;</code> among its child elements.</p>
       </p>]]></xsd:documentation>
     </xsd:annotation>
     <xsd:restriction base="xsd:token">
-      <xsd:enumeration value="3.0"/>
+      <xsd:enumeration value="4.0"/>
     </xsd:restriction>
   </xsd:simpleType>
 

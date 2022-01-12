@@ -20,8 +20,8 @@
 <ejb-jar xmlns="https://jakarta.ee/xml/ns/jakartaee"
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee 
-	     ejb-jar_4_0.xsd"
-	 version="4.0">
+	     ejb-jar_5_0.xsd"
+	 version="5.0">
   <display-name>Ejb1</display-name>
   <enterprise-beans>
     <session>
@@ -3076,7 +3076,7 @@
     </container-transaction>
   </assembly-descriptor>
 </ejb-jar>
-<?validateAgainst ejb-jar_4_0.xsd?>
+<?validateAgainst ejb-jar_5_0.xsd?>
 <?expectError 43:cvc-identity-constraint.4.1?>
 <?expectError 99:cvc-identity-constraint.4.2.2?>
 <?expectError 118:cvc-identity-constraint.4.1?>
