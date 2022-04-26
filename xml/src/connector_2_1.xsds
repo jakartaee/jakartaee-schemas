@@ -23,7 +23,7 @@
 	    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 	    elementFormDefault="qualified"
 	    attributeFormDefault="unqualified"
-	    version="2.0">
+	    version="2.1">
 
   <xsd:annotation>
     <xsd:documentation>
@@ -35,7 +35,7 @@
     <xsd:documentation>
       <![CDATA[
 
-	This is the XML Schema for the Connectors 2.0 deployment
+	This is the XML Schema for the Connectors 2.1 deployment
 	descriptor.  The deployment descriptor must be named
 	"META-INF/ra.xml" in the connector's rar file.  All connector
 	deployment descriptors must indicate the connector resource
@@ -49,8 +49,8 @@
 	    <connector xmlns="https://jakarta.ee/xml/ns/jakartaee"
 	      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	      xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
-		 https://jakarta.ee/xml/ns/jakartaee/connector_2_0.xsd"
-	      version="2.0">
+		 https://jakarta.ee/xml/ns/jakartaee/connector_2_1.xsd"
+	      version="2.1">
 	      ...
 	    </connector>
 
@@ -58,7 +58,7 @@
 	the schema using the xsi:schemaLocation attribute for Jakarta EE
 	namespace with the following location:
 
-	https://jakarta.ee/xml/ns/jakartaee/connector_2_0.xsd
+	https://jakarta.ee/xml/ns/jakartaee/connector_2_1.xsd
 
 	]]>
     </xsd:documentation>
@@ -72,7 +72,7 @@
 
   <!-- **************************************************** -->
 
-  <xsd:include schemaLocation="jakartaee_9.xsd"/>
+  <xsd:include schemaLocation="jakartaee_10.xsd"/>
 
 
 <!-- **************************************************** -->
@@ -705,7 +705,7 @@
     
     <xsd:attribute name="version"
 		   type="jakartaee:dewey-versionType"
-		   fixed="2.0"
+		   fixed="2.1"
 		   use="required">
       <xsd:annotation>
 	<xsd:documentation>

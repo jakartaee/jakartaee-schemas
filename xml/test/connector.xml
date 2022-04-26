@@ -21,8 +21,8 @@
 <connector xmlns="https://jakarta.ee/xml/ns/jakartaee"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
-           connector_2_0.xsd"
-           version="2.0" metadata-complete="true">
+           connector_2_1.xsd"
+           version="2.1" metadata-complete="true">
 
     <display-name>Simple Resource Adapter</display-name>
     <vendor-name>Java Software</vendor-name>
@@ -178,7 +178,7 @@
     <required-work-context>com.wombat.MyOtherCustomWorkContext</required-work-context>
 </connector>
 
-<?validateAgainst connector_2_0.xsd?>
+<?validateAgainst connector_2_1.xsd?>
 <?expectError 43:cvc-enumeration-valid?>
 <?expectError 43:cvc-complex-type.2.2?>
 <?expectError 67:cvc-enumeration-valid?>
