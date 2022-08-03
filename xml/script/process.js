@@ -370,6 +370,9 @@ function passThree(schemaFilename) {
         if (systemId == "http://www.w3.org/2001/xml.xsd") {
             resolvedFilename = baseDir + "lib/external/xml.xsd";
         }
+        else if (systemId == "https://www.w3.org/2001/xml.xsd") {
+            resolvedFilename = baseDir + "lib/external/xml.xsd";
+        }
         else if (systemId == "XMLSchema.dtd") {
             resolvedFilename = baseDir + "lib/external/XMLSchema.dtd";
         }
@@ -505,12 +508,12 @@ function resolveEntityUsingBuildDirectory(publicId, systemId, fallbackDir) {
             }
         }
     }
-    else if (systemId == "http://www.w3.org/2001/xml.xsd") {
+    else if (systemId == "http://www.w3.org/2001/xml.xsd" || systemId == "https://www.w3.org/2001/xml.xsd") {
 	if (windows) {
 	    resolvedUrl = "file:///" + baseDir.replace(/\\/g, "/" ) + "lib/external/xml.xsd"
 		}
 	else {
-        resolvedUrl = filePrefix + baseDir + "lib/external/xml.xsd";
+        resolvedUrl = filePrefix + baseDir + "lib/external/xml.xsd";      
 	}
 	printDebug("XML.XSD = " + resolvedUrl);
     }
