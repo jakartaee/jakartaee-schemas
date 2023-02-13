@@ -703,7 +703,7 @@
 
     <xsd:simpleContent>
       <xsd:restriction base="jakartaee:string">
-        <xsd:pattern value="[^\p{Cc}^\s]+/[^\p{Cc}^\s]+"/>
+        <xsd:pattern value="[^\p{Cc}\S]+/[^\p{Cc}\S]+"/>
       </xsd:restriction>
     </xsd:simpleContent>
   </xsd:complexType>
@@ -1392,7 +1392,7 @@
     </xsd:annotation>
 
     <xsd:restriction base="xsd:string">
-      <xsd:pattern value="[^\s]+"/>
+      <xsd:pattern value="\S+"/>
     </xsd:restriction>
   </xsd:simpleType>
 
