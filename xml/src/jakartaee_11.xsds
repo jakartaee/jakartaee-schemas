@@ -2063,6 +2063,23 @@
           </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
+      <xsd:element name="virtual"
+                   type="jakartaee:true-falseType"
+                   minOccurs="0"
+                   maxOccurs="1">
+        <xsd:annotation>
+          <xsd:documentation>
+
+            Indicates whether this executor is requested to
+            create virtual threads for tasks that do not run inline.
+            When true, the executor can create
+            virtual threads if it is capable of doing so
+            and if the request is not overridden by vendor-specific
+            configuration that restricts the use of virtual threads.
+
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element name="property"
                    type="jakartaee:propertyType"
                    minOccurs="0"
@@ -2166,6 +2183,23 @@
           </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
+      <xsd:element name="virtual"
+            type="jakartaee:true-falseType"
+            minOccurs="0"
+            maxOccurs="1">
+        <xsd:annotation>
+          <xsd:documentation>
+
+            Indicates whether this executor is requested to
+            create virtual threads for tasks that do not run inline.
+            When true, the executor can create
+            virtual threads if it is capable of doing so
+            and if the request is not overridden by vendor-specific
+            configuration that restricts the use of virtual threads.
+
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element name="property"
                    type="jakartaee:propertyType"
                    minOccurs="0"
@@ -2245,6 +2279,23 @@
 
             Priority for threads created by this thread factory.
             The default is 5 (java.lang.Thread.NORM_PRIORITY).
+
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="virtual"
+            type="jakartaee:true-falseType"
+            minOccurs="0"
+            maxOccurs="1">
+        <xsd:annotation>
+          <xsd:documentation>
+
+            Indicates whether this executor is requested to
+            create virtual threads for tasks that do not run inline.
+            When true, the executor can create
+            virtual threads if it is capable of doing so
+            and if the request is not overridden by vendor-specific
+            configuration that restricts the use of virtual threads.
 
           </xsd:documentation>
         </xsd:annotation>
