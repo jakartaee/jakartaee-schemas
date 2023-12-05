@@ -505,7 +505,7 @@ function resolveEntityUsingBuildDirectory(publicId, systemId, fallbackDir) {
             }
         }
     }
-    else if (systemId == "http://www.w3.org/2001/xml.xsd") {
+    else if (systemId == "http://www.w3.org/2001/xml.xsd" || systemId == "https://www.w3.org/2001/xml.xsd") {
 	if (windows) {
 	    resolvedUrl = "file:///" + baseDir.replace(/\\/g, "/" ) + "lib/external/xml.xsd"
 		}
