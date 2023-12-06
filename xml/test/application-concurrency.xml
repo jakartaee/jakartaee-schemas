@@ -41,16 +41,16 @@
     <name>java:app/concurrent/Executor20</name>
     <context-service-ref>java:app/concurrent/SecContextOnly</context-service-ref>
     <max-async>20</max-async>
+    <virtual>false</virtual>
     <qualifier>ee.jakarta.MyQualifier</qualifier>
     <qualifier>ee.jakarta.MyQualifier2</qualifier>
-    <virtual>false</virtual>
   </managed-executor>
 
   <managed-scheduled-executor>
     <name>java:app/concurrent/sched-exec-1</name>
     <context-service-ref>java:app/concurrent/SecContextOnly</context-service-ref>
-    <qualifier>ee.jakarta.MyQualifier</qualifier>
     <virtual>true</virtual>
+    <qualifier>ee.jakarta.MyQualifier</qualifier>
   </managed-scheduled-executor>
 
   <managed-scheduled-executor>
@@ -61,8 +61,8 @@
   <managed-thread-factory>
     <name>java:global/concurrent/top-priority-threads</name>
     <priority>10</priority>
-    <qualifier>ee.jakarta.MyQualifier</qualifier>
     <virtual>true</virtual>
+    <qualifier>ee.jakarta.MyQualifier</qualifier>
   </managed-thread-factory>
 
 </application>
