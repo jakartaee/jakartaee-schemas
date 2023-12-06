@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright (c) 2021 Contributors to the Eclipse Foundation
+    Copyright (c) 2021, 2023 Contributors to the Eclipse Foundation
 
     This program and the accompanying materials are made available under the
     terms of the Eclipse Public License v. 2.0, which is available at
@@ -19,8 +19,8 @@
 
 <web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee web-app_6_0.xsd"
- version="6.0">
+ xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee web-app_6_1.xsd"
+ version="6.1">
   <servlet>
     <servlet-name>MyServlet</servlet-name>
     <servlet-class>jakarta.schema.example.web.MyServlet</servlet-class>
@@ -40,6 +40,7 @@
     <propagated>VendorContext1</propagated>
     <unchanged>VendorContext2</unchanged>
     <unchanged>Transaction</unchanged>
+    <qualifier>ee.jakarta.MyQualifier</qualifier>
     <property>
       <name>VendorProp1</name>
       <value>Yes</value>
@@ -61,6 +62,9 @@
     <name>java:module/concurrent/MyExecutor</name>
     <context-service-ref>java:app/concurrent/MyContext</context-service-ref>
     <hung-task-threshold>30000</hung-task-threshold>
+    <virtual>false</virtual>
+    <qualifier>ee.jakarta.MyQualifier</qualifier>
+    <qualifier>ee.jakarta.MyQualifier2</qualifier>
     <property>
       <name>HungTaskAction</name>
       <value>Panic</value>
@@ -77,6 +81,8 @@
     <name>java:comp/concurrent/MyScheduledExecutor</name>
     <context-service-ref>java:global/concurrent/MinimalContext</context-service-ref>
     <max-async>10</max-async>
+    <virtual>true</virtual>
+    <qualifier>ee.jakarta.MyQualifier</qualifier>
     <property>
       <name>isSkippingEnabled</name>
       <value>false</value>
@@ -88,6 +94,8 @@
     <name>java:app/concurrent/MyThreadFactory</name>
     <context-service-ref>java:app/concurrent/MyContext</context-service-ref>
     <priority>4</priority>
+    <virtual>true</virtual>
+    <qualifier>ee.jakarta.MyQualifier</qualifier>
     <property>
       <name>thread-name-prefix</name>
       <value>MyThread!</value>
@@ -95,4 +103,4 @@
   </managed-thread-factory>
 
 </web-app>
-<?validateAgainst web-app_6_0.xsd ?>
+<?validateAgainst web-app_6_1.xsd ?>
