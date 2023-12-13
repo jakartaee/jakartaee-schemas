@@ -466,6 +466,9 @@
           as long as the qualifier annotations on the producer do not conflict with the 
           non-empty qualifier list of a context-service.
 
+          You can specify a single qualifier element with no value to indicate an
+          empty list of qualifier annotation classes.
+
           </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
@@ -2061,6 +2064,9 @@
           as long as the qualifier annotations on the producer do not conflict with the 
           non-empty qualifier list of a managed-executor.
 
+          You can specify a single qualifier element with no value to indicate an
+          empty list of qualifier annotation classes.
+
           </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
@@ -2196,6 +2202,9 @@
           as long as the qualifier annotations on the producer do not conflict with the 
           non-empty qualifier list of a managed-scheduled-executor.
 
+          You can specify a single qualifier element with no value to indicate an
+          empty list of qualifier annotation classes.
+
           </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
@@ -2330,6 +2339,9 @@
           Applications can define their own Producers for ManagedThreadFactory injection points 
           as long as the qualifier annotations on the producer do not conflict with the 
           non-empty qualifier list of a managed-thread-factory.
+
+          You can specify a single qualifier element with no value to indicate an
+          empty list of qualifier annotation classes.
 
           </xsd:documentation>
         </xsd:annotation>
