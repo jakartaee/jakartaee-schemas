@@ -453,6 +453,25 @@
           </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
+      <xsd:element name="qualifier"
+                   type="jakartaee:fully-qualified-classType"
+                   minOccurs="0"
+                   maxOccurs="unbounded">
+        <xsd:annotation>
+          <xsd:documentation>
+
+          A ContextService injection point annotated with these qualifier annotations
+          injects a bean that is produced by this context-service element.
+          Applications can define their own Producers for ContextService injection points 
+          as long as the qualifier annotations on the producer do not conflict with the 
+          non-empty qualifier list of a context-service.
+
+          You can specify a single qualifier element with no value to indicate an
+          empty list of qualifier annotation classes.
+
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element name="cleared"
                    type="jakartaee:string"
                    minOccurs="0"
@@ -2032,6 +2051,25 @@
           </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
+      <xsd:element name="qualifier"
+                   type="jakartaee:fully-qualified-classType"
+                   minOccurs="0"
+                   maxOccurs="unbounded">
+        <xsd:annotation>
+          <xsd:documentation>
+
+          A ManagedExecutorService injection point annotated with these qualifier annotations
+          injects a bean that is produced by this managed-executor element.
+          Applications can define their own Producers for ManagedExecutorService injection points 
+          as long as the qualifier annotations on the producer do not conflict with the 
+          non-empty qualifier list of a managed-executor.
+
+          You can specify a single qualifier element with no value to indicate an
+          empty list of qualifier annotation classes.
+
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element name="max-async"
                    type="jakartaee:xsdPositiveIntegerType"
                    minOccurs="0"
@@ -2059,6 +2097,23 @@
 
             The amount of time in milliseconds that a task or action
             can execute before it is considered hung.
+
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="virtual"
+                   type="jakartaee:true-falseType"
+                   minOccurs="0"
+                   maxOccurs="1">
+        <xsd:annotation>
+          <xsd:documentation>
+
+            Indicates whether this executor is requested to
+            create virtual threads for tasks that do not run inline.
+            When true, the executor can create
+            virtual threads if it is capable of doing so
+            and if the request is not overridden by vendor-specific
+            configuration that restricts the use of virtual threads.
 
           </xsd:documentation>
         </xsd:annotation>
@@ -2134,6 +2189,25 @@
           </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
+      <xsd:element name="qualifier"
+                   type="jakartaee:fully-qualified-classType"
+                   minOccurs="0"
+                   maxOccurs="unbounded">
+        <xsd:annotation>
+          <xsd:documentation>
+
+          A ManagedScheduledExecutorService injection point annotated with these qualifier annotations
+          injects a bean that is produced by this managed-scheduled-executor element.
+          Applications can define their own Producers for ManagedScheduledExecutorService injection points 
+          as long as the qualifier annotations on the producer do not conflict with the 
+          non-empty qualifier list of a managed-scheduled-executor.
+
+          You can specify a single qualifier element with no value to indicate an
+          empty list of qualifier annotation classes.
+
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element name="max-async"
                    type="jakartaee:xsdPositiveIntegerType"
                    minOccurs="0"
@@ -2162,6 +2236,23 @@
 
             The amount of time in milliseconds that a task or action
             can execute before it is considered hung.
+
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="virtual"
+            type="jakartaee:true-falseType"
+            minOccurs="0"
+            maxOccurs="1">
+        <xsd:annotation>
+          <xsd:documentation>
+
+            Indicates whether this executor is requested to
+            create virtual threads for tasks that do not run inline.
+            When true, the executor can create
+            virtual threads if it is capable of doing so
+            and if the request is not overridden by vendor-specific
+            configuration that restricts the use of virtual threads.
 
           </xsd:documentation>
         </xsd:annotation>
@@ -2236,6 +2327,25 @@
           </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
+      <xsd:element name="qualifier"
+                   type="jakartaee:fully-qualified-classType"
+                   minOccurs="0"
+                   maxOccurs="unbounded">
+        <xsd:annotation>
+          <xsd:documentation>
+
+          A ManagedThreadFactory injection point annotated with these qualifier annotations
+          injects a bean that is produced by this managed-thread-factory element.
+          Applications can define their own Producers for ManagedThreadFactory injection points 
+          as long as the qualifier annotations on the producer do not conflict with the 
+          non-empty qualifier list of a managed-thread-factory.
+
+          You can specify a single qualifier element with no value to indicate an
+          empty list of qualifier annotation classes.
+
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element name="priority"
                    type="jakartaee:priorityType"
                    minOccurs="0"
@@ -2245,6 +2355,23 @@
 
             Priority for threads created by this thread factory.
             The default is 5 (java.lang.Thread.NORM_PRIORITY).
+
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="virtual"
+            type="jakartaee:true-falseType"
+            minOccurs="0"
+            maxOccurs="1">
+        <xsd:annotation>
+          <xsd:documentation>
+
+            Indicates whether this executor is requested to
+            create virtual threads for tasks that do not run inline.
+            When true, the executor can create
+            virtual threads if it is capable of doing so
+            and if the request is not overridden by vendor-specific
+            configuration that restricts the use of virtual threads.
 
           </xsd:documentation>
         </xsd:annotation>

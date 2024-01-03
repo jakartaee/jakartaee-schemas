@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright (c) 2021 Contributors to the Eclipse Foundation
+    Copyright (c) 2021, 2023 Contributors to the Eclipse Foundation
 
     This program and the accompanying materials are made available under the
     terms of the Eclipse Public License v. 2.0, which is available at
@@ -19,8 +19,8 @@
 
 <web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee web-app_6_0.xsd"
- version="6.0">
+ xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee web-app_6_1.xsd"
+ version="6.1">
   <servlet>
     <servlet-name>MyServlet</servlet-name>
     <servlet-class>jakarta.schema.example.web.MyServlet</servlet-class>
@@ -34,6 +34,7 @@
   <context-service>
     <description>An example ContextService definition.</description>
     <name>java:app/concurrent/MyContext</name>
+    <qualifier>ee.jakarta.MyQualifier</qualifier>
     <cleared>Remaining</cleared>
     <propagated>Security</propagated>
     <propagated>Application</propagated>
@@ -60,7 +61,10 @@
     <description>An example ManagedExecutorService definition.</description>
     <name>java:module/concurrent/MyExecutor</name>
     <context-service-ref>java:app/concurrent/MyContext</context-service-ref>
+    <qualifier>ee.jakarta.MyQualifier</qualifier>
+    <qualifier>ee.jakarta.MyQualifier2</qualifier>
     <hung-task-threshold>30000</hung-task-threshold>
+    <virtual>false</virtual>
     <property>
       <name>HungTaskAction</name>
       <value>Panic</value>
@@ -76,7 +80,9 @@
     <description>An example ManagedScheduledExecutorService definition.</description>
     <name>java:comp/concurrent/MyScheduledExecutor</name>
     <context-service-ref>java:global/concurrent/MinimalContext</context-service-ref>
+    <qualifier>ee.jakarta.MyQualifier</qualifier>
     <max-async>10</max-async>
+    <virtual>true</virtual>
     <property>
       <name>isSkippingEnabled</name>
       <value>false</value>
@@ -87,7 +93,9 @@
     <description>An example ManagedThreadFactory definition.</description>
     <name>java:app/concurrent/MyThreadFactory</name>
     <context-service-ref>java:app/concurrent/MyContext</context-service-ref>
+    <qualifier>ee.jakarta.MyQualifier</qualifier>
     <priority>4</priority>
+    <virtual>true</virtual>
     <property>
       <name>thread-name-prefix</name>
       <value>MyThread!</value>
@@ -95,4 +103,4 @@
   </managed-thread-factory>
 
 </web-app>
-<?validateAgainst web-app_6_0.xsd ?>
+<?validateAgainst web-app_6_1.xsd ?>

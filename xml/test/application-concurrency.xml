@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright (c) 2021 Contributors to the Eclipse Foundation
+    Copyright (c) 2021, 2023 Contributors to the Eclipse Foundation
 
     This program and the accompanying materials are made available under the
     terms of the Eclipse Public License v. 2.0, which is available at
@@ -19,8 +19,8 @@
 
 <application xmlns="https://jakarta.ee/xml/ns/jakartaee"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee application_10.xsd"
- version="10">
+ xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee application_11.xsd"
+ version="11">
 
   <module>
     <web>
@@ -31,6 +31,7 @@
 
   <context-service>
     <name>java:app/concurrent/SecContextOnly</name>
+    <qualifier>ee.jakarta.MyQualifier</qualifier>
     <cleared></cleared>
     <propagated>Security</propagated>
     <unchanged>Remaining</unchanged>
@@ -39,12 +40,17 @@
   <managed-executor>
     <name>java:app/concurrent/Executor20</name>
     <context-service-ref>java:app/concurrent/SecContextOnly</context-service-ref>
+    <qualifier>ee.jakarta.MyQualifier</qualifier>
+    <qualifier>ee.jakarta.MyQualifier2</qualifier>
     <max-async>20</max-async>
+    <virtual>false</virtual>
   </managed-executor>
 
   <managed-scheduled-executor>
     <name>java:app/concurrent/sched-exec-1</name>
     <context-service-ref>java:app/concurrent/SecContextOnly</context-service-ref>
+    <qualifier>ee.jakarta.MyQualifier</qualifier>
+    <virtual>true</virtual>
   </managed-scheduled-executor>
 
   <managed-scheduled-executor>
@@ -54,8 +60,10 @@
 
   <managed-thread-factory>
     <name>java:global/concurrent/top-priority-threads</name>
+    <qualifier>ee.jakarta.MyQualifier</qualifier>
     <priority>10</priority>
+    <virtual>true</virtual>
   </managed-thread-factory>
 
 </application>
-<?validateAgainst application_10.xsd?>
+<?validateAgainst application_11.xsd?>
