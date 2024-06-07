@@ -12,7 +12,7 @@ will need to be made:
 
 - The files will need to be renamed to use the version number of
   the corresponding spec in the Jakarta EE release.
-- After building the schema, it must be published according to the guide described in [How to Publish XML Schemas](https://eclipse-ee4j.github.io/jakartaee-platform/publish-xml-schemas).
+- After building the schema, it must be published according to the guide described in [How to Publish XML Schemas](https://jakartaee.github.io/platform/publish-xml-schemas).
 
 ----
 
