@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright (c) 2009, 2023 Oracle and/or its affiliates and others.
+    Copyright (c) 2009, 2024 Oracle and/or its affiliates and others.
     All rights reserved.
 
     This program and the accompanying materials are made available under the
@@ -1487,7 +1487,7 @@
                    maxOccurs="1">
         <xsd:annotation>
           <xsd:documentation>
-            The maximum size limit of uploaded files
+            The maximum size limit of uploaded files in bytes
           </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
@@ -1497,7 +1497,7 @@
                    maxOccurs="1">
         <xsd:annotation>
           <xsd:documentation>
-            The maximum size limit of multipart/form-data requests
+            The maximum size limit of multipart/form-data requests in bytes
           </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
@@ -1507,7 +1507,7 @@
                    maxOccurs="1">
         <xsd:annotation>
           <xsd:documentation>
-            The size threshold after which an uploaded file will be
+            The size threshold (in bytes) after which an uploaded file will be
             written to disk
           </xsd:documentation>
         </xsd:annotation>
