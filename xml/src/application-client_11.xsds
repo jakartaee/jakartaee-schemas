@@ -23,7 +23,7 @@
 	    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 	    elementFormDefault="qualified"
 	    attributeFormDefault="unqualified"
-	    version="10">
+	    version="11">
 
   <xsd:annotation>
     <xsd:documentation>
@@ -73,7 +73,7 @@
 
   <!-- **************************************************** -->
 
-  <xsd:include schemaLocation="jakartaee_10.xsd"/>
+  <xsd:include schemaLocation="jakartaee_11.xsd"/>
 
   <!-- **************************************************** -->
 
