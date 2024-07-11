@@ -46,7 +46,7 @@
   </security-role>
 
 </application>
-<?validateAgainst application_10.xsd?>
+<?validateAgainst application_11.xsd?>
 <?expectError 37:cvc-identity-constraint.4.1?>
 <?expectError 45:cvc-identity-constraint.4.1?>
 
