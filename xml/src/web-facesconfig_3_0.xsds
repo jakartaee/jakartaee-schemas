@@ -1389,7 +1389,7 @@
         <p>The "if" element defines a condition that must resolve
         to true in order for the navigation case on which it is
         defined to be matched, with the existing match criteria
-        (action method and outcome) as a prerequiste, if present.
+        (action method and outcome) as a prerequisite, if present.
         The condition is defined declaratively using a value
         expression in the body of this element. The expression is
         evaluated at the time the navigation case is being matched.
@@ -1401,7 +1401,7 @@
 <div class="changed_added_2_2">
 
 <p>When used in a <code>&lt;switch&gt;</code> within a flow, if the
-expresion returns <code>true</code>, the
+expression returns <code>true</code>, the
 <code>&lt;from-outcome&gt;</code> sibling element's outcome is used as
 the id of the node in the flow graph to which control must be
 passed.</p>
@@ -2315,7 +2315,7 @@ which must contain exactly one <code>&lt;flow-id&gt;</code> element.</p>
 
         <![CDATA[
 
-<p class="changed_added_2_2">Identifiy the called flow.</p>
+<p class="changed_added_2_2">Identify the called flow.</p>
 
 <div class="changed_added_2_2">
 
@@ -2601,7 +2601,7 @@ which must contain exactly one <code>&lt;flow-id&gt;</code> element.</p>
     <xsd:annotation>
       <xsd:documentation><![CDATA[
 
-       <p> The "map-entry" element reprsents a single key-entry pair
+       <p> The "map-entry" element represents a single key-entry pair
         that will be added to the computed value of a managed
         property of type java.util.Map.</p>
         
