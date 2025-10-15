@@ -26,7 +26,7 @@
   <module-name>MyModule</module-name>
   <module-name>MyOtherModule</module-name>
   <description xml:lang="en">This is my app client</description>
-  <description xml:lang="tr">Umit</description>
+  <description xml:lang="tr">Unit</description>
   <display-name>MyAppClient</display-name>
   <env-entry>
     <env-entry-name>accountId1</env-entry-name>

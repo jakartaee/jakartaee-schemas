@@ -605,7 +605,7 @@
 	of a bean with container managed concurrency.
 
 	The optional lock element specifies the kind of concurrency 
-	lock asssociated with the method.
+	lock associated with the method.
 	
 	The optional access-timeout element specifies the amount of
 	time (in a given time unit) the container should wait for a
@@ -1621,7 +1621,7 @@
         
             - the exception class. When the container receives
               an exception of this type, it is required to 
-              forward this exception as an applcation exception 
+              forward this exception as an application exception 
               to the client regardless of whether it is a checked
               or unchecked exception.
             - an optional rollback element. If this element is 
@@ -1631,7 +1631,7 @@
             - an optional inherited element. If this element is 
               set to true, subclasses of the exception class type
 	      are also automatically considered application 
-	      exceptions (unless overriden at a lower level).
+	      exceptions (unless overridden at a lower level).
 	      If set to false, only the exception class type is
 	      considered an application-exception, not its
 	      exception subclasses. If not specified, this

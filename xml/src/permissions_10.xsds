@@ -53,7 +53,7 @@
 		https://jakarta.ee/xml/ns/jakartaee/permissions_10.xsd"
 	      version="10">
 	      ...
-	    </permisssions>
+	    </permissions>
 
 	The instance documents may indicate the published version of
 	the schema using the xsi:schemaLocation attribute for Jakarta EE
