@@ -28,7 +28,7 @@
 <!-- Assuming everything else is specified via annotations (the resourceadapter-class through @Connector
 Connection Definitions through @ConnectionDefinition, message adapter configuration through @Activation
 and Administered Objects through @AdministeredObject. A minimal connector deployment descriptor to
-add a RA configuration property and specify a required work context must look like the following. 
+add a RA configuration property and specify a required work context must look like the following.
 This should validate against the 3.0 DD -->
     <resourceadapter>
         <!--<resourceadapter-class>

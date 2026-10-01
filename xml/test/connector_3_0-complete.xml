@@ -69,29 +69,29 @@
             </config-property-value>
         </config-property>
 
-	<outbound-resourceadapter>
-		<connection-definition>
-			<managedconnectionfactory-class>connector.MyMCF</managedconnectionfactory-class>
-			<config-property>
-			    <config-property-name>port</config-property-name>
-			    <config-property-type>java.lang.Integer</config-property-type>
-			    <config-property-value>42</config-property-value>
-			</config-property>
-			<connectionfactory-interface>connector.MyCF</connectionfactory-interface>
-			<connectionfactory-impl-class>connector.MyCFImpl</connectionfactory-impl-class>
-			<connection-interface>connector.MyConn</connection-interface>
-			<connection-impl-class>connector.MyConnImpl</connection-impl-class>
-		</connection-definition>
-		<transaction-support>XATransaction</transaction-support>
-		<authentication-mechanism>
-		    <authentication-mechanism-type>BasicPassword</authentication-mechanism-type>
-		    <credential-interface>jakarta.resource.spi.security.PasswordCredential</credential-interface>
-		</authentication-mechanism>
-		<reauthentication-support>false</reauthentication-support>
-	</outbound-resourceadapter>
+    <outbound-resourceadapter>
+        <connection-definition>
+            <managedconnectionfactory-class>connector.MyMCF</managedconnectionfactory-class>
+            <config-property>
+                <config-property-name>port</config-property-name>
+                <config-property-type>java.lang.Integer</config-property-type>
+                <config-property-value>42</config-property-value>
+            </config-property>
+            <connectionfactory-interface>connector.MyCF</connectionfactory-interface>
+            <connectionfactory-impl-class>connector.MyCFImpl</connectionfactory-impl-class>
+            <connection-interface>connector.MyConn</connection-interface>
+            <connection-impl-class>connector.MyConnImpl</connection-impl-class>
+        </connection-definition>
+        <transaction-support>XATransaction</transaction-support>
+        <authentication-mechanism>
+            <authentication-mechanism-type>BasicPassword</authentication-mechanism-type>
+            <credential-interface>jakarta.resource.spi.security.PasswordCredential</credential-interface>
+        </authentication-mechanism>
+        <reauthentication-support>false</reauthentication-support>
+    </outbound-resourceadapter>
 
         <inbound-resourceadapter>
-            <messageadapter>          
+            <messageadapter>
                 <messagelistener>
                     <messagelistener-type>
                         connector.MyMessageListener
@@ -105,7 +105,7 @@
                         </required-config-property>
                     </activationspec>
                 </messagelistener>
-            </messageadapter>          
+            </messageadapter>
         </inbound-resourceadapter>
 
         <adminobject>
