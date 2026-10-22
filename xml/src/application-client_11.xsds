@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright (c) 2009, 2024 Oracle and/or its affiliates. All rights reserved.
+    Copyright (c) 2009, 2026 Oracle and/or its affiliates. All rights reserved.
 
     This program and the accompanying materials are made available under the
     terms of the Eclipse Public License v. 2.0, which is available at
@@ -35,7 +35,7 @@
     <xsd:documentation>
       <![CDATA[
 
-	This is the XML Schema for the application client 10
+	This is the XML Schema for the application client 11
 	deployment descriptor.  The deployment descriptor must
 	be named "META-INF/application-client.xml" in the
 	application client's jar file.  All application client
@@ -50,8 +50,8 @@
 	    <application-client xmlns="https://jakarta.ee/xml/ns/jakartaee"
 	      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	      xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee 
-		https://jakarta.ee/xml/ns/jakartaee/application-client_10.xsd"
-	      version="10">
+		https://jakarta.ee/xml/ns/jakartaee/application-client_11.xsd"
+	      version="11">
 	      ...
 	    </application-client>
 
@@ -59,7 +59,7 @@
 	the schema using the xsi:schemaLocation attribute for Jakarta EE
 	namespace with the following location:
 
-	https://jakarta.ee/xml/ns/jakartaee/application-client_10.xsd
+	https://jakarta.ee/xml/ns/jakartaee/application-client_11.xsd
 
 	]]>
     </xsd:documentation>
@@ -247,12 +247,12 @@
 
     <xsd:attribute name="version"
 		   type="jakartaee:dewey-versionType"
-		   fixed="10"
+		   fixed="11"
 		   use="required">
       <xsd:annotation>
 	<xsd:documentation>
 
-	  The required value for the version is 10.
+	  The required value for the version is 11.
 
 	</xsd:documentation>
       </xsd:annotation>
